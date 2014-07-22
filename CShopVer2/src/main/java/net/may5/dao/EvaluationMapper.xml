@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.may5.dao.EvaluationMapper">
+
+
+	<select id="setEvaluation" parameterType="Evaluation" resultType="Evaluation">
+		insert into Evaluation(evaluationIndex, itemId,
+		grade, evaluationContents, cstCode, evaluationDate)
+		values(EVA.nextval, #{itemId}, #{grade}, #{evaluationContents}, #{cstCode},
+		sysdate)
+	</select>
+	
+	<select id="delEvaluation" parameterType="int">
+			delete from evaluation where evaluationIndex = #{evaluationIndex}
+	</select>
+
+</mapper>

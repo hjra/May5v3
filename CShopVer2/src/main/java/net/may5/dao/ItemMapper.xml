@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.may5.dao.ItemMapper">
+
+
+	<select id="getAnItem" resultType="Item">
+		select * from item where
+		itemId=#{itemId}
+	</select>
+
+	<select id="getItemCount" resultType="int">
+		select count(*) from item
+	</select>
+
+
+	<select id="getItemList" resultType="Item">
+		select * from item
+	</select>
+
+	<!-- <select id="getEvaluationList" resultType="Evaluation">
+	 SELECT B.* 
+		FROM (SELECT A.*,row_number() over (ORDER BY EVALUATIONINDEX DESC) number_of_row 
+		FROM evaluation A WHERE A.itemId=#{itemId}) B WHERE B.number_of_row between 
+		#{startrow} and #{endrow} </select> -->
+
+<select id="getEvaluationList" resultType="Evaluation">
+	SELECT B.* , C.* FROM (
+		 	SELECT A.*, row_number() over (ORDER BY EVALUATIONINDEX DESC) number_of_row 
+	      FROM evaluation A 
+			WHERE A.itemId=#{itemId}
+			ORDER BY EVALUATIONINDEX DESC
+			) B,
+	    customer C
+	WHERE B.cstCode = C.cstCode 
+		  AND B.number_of_row between #{startrow} and #{endrow} ORDER BY EVALUATIONINDEX DESC
+</select>
+
+
+	<select id="getListCount" resultType="int">
+		select count(*) from
+		evaluation
+	</select>
+
+
+	<select id="getAnItemListCount" resultType="int">
+		select count(*) from
+		evaluation where itemId=#{itemId}
+	</select>
+
+	<select id="getOrderList" resultType="Orders">
+		select * from orders
+		where to_char(orderDate, 'yyyy-mm-dd')=#{orderDate}
+		order By itemId asc
+	</select>
+	
+		<select id="getOrderListCount" resultType="int">
+		select count(*) from orders
+		</select>
+	
+		<select id="getOrderListDailyCount" resultType="int">
+		select count(*) from orders where to_char(orderDate, 'yyyy-mm-dd')=#{orderDate}
+		</select>
+	
+	
+		<select id="getAnOrderList" resultType="Orders">
+		select * from orders where itemId=#{itemId}
+		</select>
+		
+		<select id="getOrderListCountSameItemId" resultType="Orders" >
+		select itemId, count(itemId) itemCnt from orders group by itemId 
+		order by itemCnt
+		</select>
+		
+
+		<select id="setNewItem">
+			insert into item(itemId, itemName, itemCalorie, itemInfo, itemImg1, itemImg2, itemImg3, itemImg4, sticker, price)
+			values(#{ITEMID}, #{ITEMNAME}, #{ITEMCALORIE}, #{ITEMINFO}, #{ITEMIMG1}, #{ITEMIMG2}, #{ITEMIMG3}, #{ITEMIMG4}, #{STICKER}, #{PRICE})
+		</select>
+		
+	
+		
+		<update id="modifyItem">
+			update item set itemName=#{ITEMNAME}, itemCalorie=#{ITEMCALORIE}, itemInfo= #{ITEMINFO}, itemImg1=#{ITEMIMG1}, itemImg2=#{ITEMIMG2}, itemImg3=#{ITEMIMG3}, itemImg4=#{ITEMIMG4}, sticker=#{STICKER}, price=#{PRICE}
+   		   WHERE itemId = #{itemId}
+		</update>
+		
+		<select id="deleteItem" parameterType="String">
+			delete from item where itemId = #{deleteItemId}
+		</select>
+		
+		
+</mapper>

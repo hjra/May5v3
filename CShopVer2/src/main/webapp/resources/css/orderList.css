@@ -1,0 +1,320 @@
+/* 상세내역스크롤 */
+
+.detailhome article {
+position: relative;
+overflow: hidden;
+height: 0px;
+background: #FFFFFF;
+width: 830px;
+margin-left: -628px;
+margin-top: 10px;
+transition: 0.9s;
+}
+
+.detailhome article dtinformation {
+display: block;
+padding: 12px;
+margin: 5px;
+}
+
+.detailhome input:checked ~ article.orderartcle {
+height: 620px;
+}
+
+/* 배송이미지 */
+.image {border: 1px solid; width: 300px; height: 200px; padding-top: 100px; margin: 0 auto;}
+.Commenta {border: 1px solid; width: 300px; height: 30px; padding-top: 8px; margin: 0 auto; }
+
+
+/* 상세내역정보 */
+.alla {margin-top:10px; border-bottom: 1px solid; width: 825px; height: 65px; }
+.oda { float: left; width: 200px; border-right: 1px solid; font-size: 20px; height: 30px; margin-top: 20px;}
+.odinfoa {margin-top: 1px;}
+.odina {margin-top:10px; margin-left: 320px; width: 500px; }
+.odinfoo {float: left; font-size: 15px; text-align: right; margin-left: 138px;}
+.oddayy {font-size: 15px; text-align: right;}
+.itemnamee {float: left; margin-top: 8px; font-size: 17px; text-align: right; }
+.itemprice {float: left; margin-top: 8px; font-size: 17px; margin-left:50px; text-align: right;}
+.stockAmount {margin-top: 8px; font-size: 17px; text-align: right;}
+ 
+ 
+
+ 
+/* 결제정보 */
+#mninfoa {float:left; width: 265px; height:240px; border: 1px solid; margin-top: 10px}
+#mninfo { margin-left: 0px; margin-top: 6px; height: 35px; font-size: 15px; border-bottom: 1px solid }
+#mna {float: left; width: 80px; height:198px; border-right: 1px solid; }
+#itemmnq {margin-top: 15px; border-bottom: 1px solid;}
+#dlvmnq {margin-top: 15px; border-bottom: 1px solid;}
+#mn {margin-top: 50px; width: 80px; fon}
+#mnc {float: left; text-align: right; width: 183px;}
+#itemmn {margin-top: 15px; border-bottom: 1px solid; }
+#dlvmn {margin-top: 15px; border-bottom: 1px solid;}
+#orderDateq {float: left; margin-top: 15px; border-bottom: 1px solid;}
+#orderDate { margin-top: 15px; border-bottom: 1px solid; }
+#pointCodeq {float: left; margin-top: 5px;}
+#pointCode {margin-top: 5px;}
+#pointCodeq {margin-top: 13px;}
+#pointCode {margin-top: 13px;}
+#allmnq {float: left; margin-top: 15px; }
+#allmn {margin-top: 15px;}
+
+ 
+/* 주문자정보 */
+#myinfoa {float: left; width:265px; height:240px; border: 1px solid; margin-left: 15px; margin-top: 10px}
+#myinfo { margin-left: 0px; margin-top: 6px; height: 35px; font-size: 15px; border-bottom: 1px solid }
+#mya { float: left; width: 80px; height:198px; border-right: 1px solid;}
+#mynq {margin-top: 15px; border-bottom: 1px solid;}
+#hpq {margin-top: 15px; border-bottom: 1px solid;}
+#cstemailq {margin-top: 15px; width: 80px; border-bottom: 1px solid;}
+#myq { float: left; text-align: right; width: 183px;}
+#my {margin-top: 15px; border-bottom: 1px solid;}
+#hp {margin-top: 15px; border-bottom: 1px solid;}
+#cstemail {margin-top: 15px; border-bottom: 1px solid;}
+#zero {margin-top: 33px;}
+
+/* 배송지정보 */
+#youinfoa {float: left; width:265px; height:240px; border: 1px solid; margin-left: 15px; margin-top: 10px}
+#youinfo { margin-left: 0px; margin-top: 6px; height: 35px; font-size: 15px; border-bottom: 1px solid}
+#youa {float: left; width: 80px; height:198px; border-right: 1px solid;}
+#younq {margin-top: 15px; border-bottom: 1px solid;}
+#yhpq {margin-top: 15px; border-bottom: 1px solid;}
+#phoneq {margin-top: 15px; border-bottom: 1px solid;}
+#addressq {margin-top: 35px;}
+#youq {float: left; text-align: right; width: 183px;}
+#you {margin-top: 15px; border-bottom: 1px solid;}
+#yhp {margin-top: 15px; border-bottom: 1px solid;}
+#phone {margin-top: 15px; border-bottom: 1px solid;}
+#address {margin-top: 33px;}
+
+#alimimain {
+  text-align: center;
+}
+
+#alimi {
+width:100%; margin-top: 20px;
+}
+
+#forma { background-color: #512800;
+width: 830px; display: inline-block;
+height:35px;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-o-border-radius: 3px;
+
+}
+
+#alimisearch {
+width:30%;
+margin-top: 2.4px;
+background-color: #FFEAB7;
+height: 30px;
+border: 1.5px solid #A9A9A9;
+  box-shadow: inset 0 0 3px #FFB60B;
+  -moz-box-shadow: inset 0 0 3px #FFB60B;
+  -webkit-box-shadow: inset 0 0 3px #FFB60B;
+  -o-box-shadow: inset 0 0 3px #FFB60B;
+ 
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#alimibutton {
+color: #FFFFFF;
+background-color: #512800;
+border: 0px;
+width: 50px;
+height: 27px;
+font-size: 15px;
+}
+
+#listname { border-bottom: 1.5px solid #724C00;
+width: 830px; display: inline-block;
+height:35px; }
+#l1 { margin-top: 7px; position: relative; float: left; margin-left: 25px; color: #724C00; font-weight:bold; font-size: 13px}
+#l2 { margin-top: 7px; position: relative; float: left; margin-left: 72px; color: #724C00; font-weight:bold; font-size: 13px }
+#l3 { margin-top: 7px; position: relative; float: left; margin-left: 112px; color: #724C00; font-weight:bold; font-size: 13px}
+#l4 { margin-top: 7px; position: relative; float: left; margin-left: 85px; color: #724C00; font-weight:bold; font-size: 13px}
+#l7 { margin-top: 7px; position: relative; float: left; margin-left: 46px; color: #724C00; font-weight:bold; font-size: 13px }
+#l8 { margin-top: 7px; position: relative; float: left; margin-left: 59px; color: #724C00; font-weight:bold; font-size: 13px }
+#l5 { margin-top: 7px; position: relative; float: left; margin-left: 60px; color: #724C00; font-weight:bold; font-size: 13px }
+
+
+
+#am {
+  width: 830px; margin: 0 auto;
+}
+#aa {
+ height: 35px;
+}
+
+
+
+
+#a1 {float: left; border: 1px; background-color: #FFFFE9; width: 3px; height: 30px; margin-top:5px; margin-left: 0px; font-size: 12px}
+#apa {visibility:hidden; background-color: #FA8072; position: absolute;
+width: 86px; margin: 0 auto;
+border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;}
+#aa1 {visibility:hidden;}
+#a2 {float: left; left: 100px; border: 1px; background-color: #FFFFE9; width: 101px; height: 30px; font-size: 12px; margin-top:5px;}
+#a3 {float: left; left: 200px; border: 1px; background-color: #FFFFE9; width: 160px; height: 30px; font-size: 12px; margin-top:5px;}
+#a4 {float: left; left: 300px; border: 1px; background-color: #FFFFE9; width: 165px; height: 30px; font-size: 12px; margin-top:5px;}
+#a7 {float: left; left: 300px; border: 1px; background-color: #FFFFE9; width: 99px; height: 30px; font-size: 12px; margin-top:5px;}
+#a8 {float: left; left: 300px; border: 1px; background-color: #FFFFE9; width: 100px; height: 30px; font-size: 12px; margin-top:5px;}
+#a5 {float: left; left: 300px; border: 1px; background-color: #FFFFE9; width: 133px; height: 30px; font-size: 12px; margin-top:5px;}
+#a6 {float: left; left: 300px; border: 1px; background-color: #FFFFE9; width: 68px; height: 30px; font-size: 12px; margin-top:5px;}
+
+
+
+ .pageqq { visibility: visible;}
+ .pageqa { visibility: visible;}
+
+
+
+@media only screen and (max-width: 768px){
+
+/*
+상세내역
+
+
+
+.detailhome article {
+overflow: hidden;
+height: 0px;
+background-color: #FFF0F5;
+width: 330px;
+margin-left: -128px;
+margin-top: 10px;
+}
+
+.detailhome article dtinformation {
+display: block;
+padding: 12px;
+margin: 5px;
+background-color: #FFFFFF;
+}
+
+.detailhome input:checked ~ article.orderartcle {
+height: 120px;
+}
+#ddd {
+
+margin-left: 50px;
+}
+*/
+
+
+
+#alimi {
+width:100%;	margin-top: 20px;
+}
+
+#alimimain {
+  text-align: center;
+}
+
+#aa { float: right; position: absolute;
+}
+
+#forma { background-color: #512800;
+width: 100%; display:inline-block;
+height:35px;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-o-border-radius: 3px;
+}
+
+#alimisearch {
+width:30%;
+margin-top: 2.4px;
+background-color: #FFEAB7;
+height: 30px;
+border: 1.5px solid #A9A9A9;
+  box-shadow: inset 0 0 3px #FFB60B;
+  -moz-box-shadow: inset 0 0 3px #FFB60B;
+  -webkit-box-shadow: inset 0 0 3px #FFB60B;
+  -o-box-shadow: inset 0 0 3px #FFB60B;
+ 
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+
+#listname {visibility:visible; position:absolute; background-color: #875E00;
+width: 0px; display: inline-block;
+height:35px; }
+#l1 {visibility:hidden; margin-left: 0px; margin-top: 7px; position: relative; }
+#l2 {visibility:hidden; margin-left: 0px; margin-top: 7px; position: relative;}
+#l3 {visibility:hidden; margin-left: 0px; margin-top: 7px; position: relative;}
+#l4 {visibility:hidden; margin-left: 0px; margin-top: 7px; position: relative; }
+#l7 {visibility:hidden; margin-left: 0px; margin-top: 7px; position: relative; }
+#l8 {visibility:hidden; margin-left: 0px; margin-top: 7px; position: relative;}
+#l5 {visibility:hidden; margin-left: 0px; margin-top: 7px; position: relative; }
+
+#am {
+  width: 100%; margin: 0 auto;
+}
+
+
+
+ #a1 {font-size:12px; margin-top: 5%; margin-left: 5%; background-color: #FAEBD7;
+  width: 88px ; height: 80px;
+  border: 1.5px solid #A9A9A9;
+  box-shadow: 0 8px 10px -8px black;
+  -moz-box-shadow: 0 8px 10px -8px black;
+  -webkit-box-shadow: 0 8px 10px -8px black;
+  -o-box-shadow: 0 8px 10px -8px black;
+ 
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;}	
+ 
+ 
+  #apa {visibility:visible; background-color: #8EC7D0; margin: 0 auto;
+  border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;}
+ 
+ 
+  #aa1 {visibility:visible; margin-top: 20px; }
+  #aaq1{font-size:11px;}
+  #aaq2{font-size:11px;}
+  #aaq3{font-size:9px;}
+ #a2 {visibility:hidden; margin-left: -100px; border: 1px; background-color: #FFECB0; width: 100px; height: 30px; }
+ #a3 {visibility:hidden; margin-left: -100px; border: 1px; background-color: #FFE699; width: 100px; height: 30px; }
+ #a4 {visibility:hidden; margin-left: -100px; border: 1px; background-color: #FFDD75; width: 100px; height: 30px; }
+ #a7 {visibility:hidden; margin-left: -100px; border: 1px; background-color: #FFFFE9; width: 100px; height: 30px; }
+ #a8 {visibility:hidden;margin-left: -100px; border: 1px; background-color: #FFFFE9; width: 100px; height: 30px; }
+ #a5 {visibility:hidden; margin-left: -100px; border: 1px; background-color: #FFDD75; width: 100px; height: 30px; }
+ #a6 {visibility:hidden; margin-left: -100px; border: 1px; background-color: #FFDD75; width: 100px;height: 30px; }
+
+ 
+ #form {
+visibility: hidden;
+}
+ 
+ .pageqq { visibility: hidden;}
+ .pageqa { visibility: hidden;}
+ 
+}
+

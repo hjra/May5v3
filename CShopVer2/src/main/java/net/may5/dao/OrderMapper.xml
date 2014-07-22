@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.may5.dao.OrderMapper">
+
+	<!-- 고객페이지↓ -->
+	<!-- 주문상세 -->
+	<select id="getCstExistingInfo" resultType="Customer">
+		select * from customer A 
+		inner join Zip B on A.ZipCode = B.ZipCode where cstId = #{cstId}
+	</select>
+	
+	<!-- 카드종류 -->
+	<select id="getCardKind" resultType="Orders">
+		select * from cardKind
+	</select>
+	
+	<!-- 카드종류 -->
+	<select id="getACardKind" resultType="Orders">
+		select * from cardKind where cardCode = #{cardCode}
+	</select>
+	
+	<!-- 결제구분 -->
+	<select id="getPayKind" resultType="Orders">
+		select * from payKind
+	</select>
+	
+	<!-- 카드구분 -->
+	<select id="getCardSection" resultType="Orders">
+		select * from cardSection
+	</select>
+	
+	<!-- 할부기간 -->
+	<select id="getInstallment" resultType="Orders">
+		select * from installment
+	</select>
+	
+	<!-- 현금영수증신청및저장 -->
+	<select id="getCashReceiptRequestInfoSave" resultType="Orders">
+		select * from cashReceiptRequestInfoSave
+	</select>
+	
+	<!-- 현금영수증신청수단 -->
+	<select id="getCashReceiptRequestWay" resultType="Orders">
+		select * from cashReceiptRequestWay
+	</select>
+	
+	<!-- 소득공제용 -->
+	<select id="getDeduction" resultType="Orders">
+		select * from deduction
+	</select>
+	
+	<!-- 통신사 -->
+	<select id="getTelecom" resultType="Orders">
+		select * from telecom
+	</select>
+	
+	<!-- 옵션선택 -->
+	<select id="getOptionPrice" resultType="Orders">
+		select * from optionPrice
+	</select>
+	
+	
+	
+	
+	<!-- 주문내역 -->
+	<select id="getOrderList" resultType="Orders">
+		select ITEM.*, ORDERS.*,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.itemid = ITEM.itemid
+	</select>
+	
+	<select id="getorderDateSearch" parameterType="map" resultType="Orders">
+		select ITEM.*, ORDERS.*,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.ITEMID = ITEM.ITEMID
+		where TRUNC(ORDERS.ORDERDATE)=to_date(#{orderDate}, 'YYYYMMDD')
+	</select>
+	
+	<select id="getOrderlNumberSearch" parameterType="map" resultType="Orders">
+		select ITEM.*, ORDERS.*,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.ITEMID = ITEM.ITEMID
+		where TRUNC(ORDERS.ORDERDATE)=to_date(#{orderDate}, 'YYYYMMDD') and ORDERS.SAMETIMECOUNT=#{sameTimeCount} and
+		ITEM.ITEMID=#{itemId}
+	</select>
+
+	<select id="getitemNameSearch" parameterType="String" resultType="Orders">
+		select ITEM.*, ORDERS.*,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.itemid = ITEM.itemid
+		where ITEM.ITEMNAME=#{itemName}
+	</select>
+	
+	
+	<!-- 관리자페이지↓ -->
+	<!-- 알리미 -->
+	<select id="getAlimiList" resultType="Orders">
+		select CUSTOMER.*, ORDERS.*,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.ITEMID = ITEM.ITEMID
+		inner join Customer on ORDERS.CSTCODE = CUSTOMER.CSTCODE
+	</select>
+	
+	<select id="getLevelCodeSearch" parameterType="String" resultType="Orders">
+		select CUSTOMER.*, ORDERS.*,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.ITEMID = ITEM.ITEMID
+		inner join Customer on ORDERS.CSTCODE = CUSTOMER.CSTCODE
+		where upper(LEVELCODE) LIKE '%'||upper(#{levelCode})||'%'
+	</select>
+
+	<select id="getOrderNumberSearch" parameterType="map" resultType="Orders">
+		select CUSTOMER.*, ORDERS.*,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.ITEMID = ITEM.ITEMID
+		inner join Customer on ORDERS.CSTCODE = CUSTOMER.CSTCODE
+		where TRUNC(ORDERS.ORDERDATE)=to_date(#{orderDate}, 'YYYYMMDD') and ORDERS.SAMETIMECOUNT=#{sameTimeCount} and
+		ITEM.ITEMID=#{itemId}
+	</select>
+
+	<select id="getCstIdSearch" parameterType="String" resultType="Orders">
+		select CUSTOMER.*, ORDERS.*,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.ITEMID = ITEM.ITEMID
+		inner join Customer on ORDERS.CSTCODE = CUSTOMER.CSTCODE
+		where upper(CSTID) LIKE '%'||upper(#{cstId})||'%'
+	</select>
+	
+	<!-- 알리미메세지  -->
+	<select id="setNewAlimi">
+			insert into item (itemId, itemName, itemCalorie, itemInfo, itemImg1, itemImg2, itemImg3, itemImg4, sticker, price)
+			values(#{ITEMID}, #{ITEMNAME}, #{ITEMCALORIE}, #{ITEMINFO}, #{ITEMIMG1}, #{ITEMIMG2}, #{ITEMIMG3}, #{ITEMIMG4}, #{STICKER}, #{PRICE})
+	</select>
+	
+	
+	<update id="setNoticeComment" parameterType="Orders">
+		update Orders set noticeComment=#{noticeComment} where orderCode=#{orderCode}
+	</update>
+
+
+
+	<!-- 선물옵션 -->
+	<select id="getPriceList" resultType="Orders">
+		select CUSTOMER.*, ORDERS.*, OPTIONPRICE. *,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.ITEMID = ITEM.ITEMID
+		inner join Customer on ORDERS.CSTCODE = CUSTOMER.CSTCODE
+		inner join OPTIONPRICE on ORDERS.OPTIONCODE = OPTIONPRICE.OPTIONCODE
+	</select>
+	
+	<select id="getLevelCodePrice" parameterType="String" resultType="Orders">
+		select CUSTOMER.*, ORDERS.*, OPTIONPRICE. *,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.ITEMID = ITEM.ITEMID
+		inner join Customer on ORDERS.CSTCODE = CUSTOMER.CSTCODE
+		inner join OPTIONPRICE on ORDERS.OPTIONCODE = OPTIONPRICE.OPTIONCODE
+		where upper(LEVELCODE) LIKE '%'||upper(#{levelCode})||'%'
+	</select>
+
+	<select id="getOrderNumberPrice" parameterType="map" resultType="Orders">
+		select CUSTOMER.*, ORDERS.*, OPTIONPRICE. *,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.ITEMID = ITEM.ITEMID
+		inner join Customer on ORDERS.CSTCODE = CUSTOMER.CSTCODE
+		inner join OPTIONPRICE on ORDERS.OPTIONCODE = OPTIONPRICE.OPTIONCODE
+		where TRUNC(ORDERS.ORDERDATE)=to_date(#{orderDate}, 'YYYYMMDD') and ORDERS.SAMETIMECOUNT=#{sameTimeCount} and
+		ITEM.ITEMID=#{itemId}
+	</select>
+
+	<select id="getCstIdPrice" parameterType="String" resultType="Orders">
+		select CUSTOMER.*, ORDERS.*, OPTIONPRICE. *,
+		to_char(ORDERS.ORDERDATE,'YYYYMMDDHHMI')||ORDERS.SAMETIMECOUNT||ITEM.ITEMID
+		orderNumber
+		from Orders inner join Item on ORDERS.ITEMID = ITEM.ITEMID
+		inner join Customer on ORDERS.CSTCODE = CUSTOMER.CSTCODE
+		inner join OPTIONPRICE on ORDERS.OPTIONCODE = OPTIONPRICE.OPTIONCODE
+		where upper(CSTID) LIKE '%'||upper(#{cstId})||'%'
+	</select>
+	
+	
+	
+	
+	<!-- 주문관리 -->
+	<select id="getOrderListMng" resultType="Orders">
+		select * from Orders A 
+		inner join OptionPrice B on A.OptionCode = B.OptionCode
+		inner join Item C on A.ItemId = C.ItemId
+		inner join PayKind D on A.PayCode = D.PayCode
+		inner join Delivery E on A.DlvChargeCode = E.DlvChargeCode
+		inner join Zip F on A.ZipCode = F.ZipCode
+	</select>
+	
+</mapper>

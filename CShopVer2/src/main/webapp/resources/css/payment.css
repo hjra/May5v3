@@ -1,0 +1,186 @@
+.useroption {margin: 0 auto; text-align: center; min-height: 100%; height: 900px;  background-color: #F9F6E7}
+.useroptiona {display: inline-block; padding-top: 200px; padding-left: 10px; padding-right: 10px; }  
+.useroptionb {padding-left: 30px; padding-right: 30px; background: rgba(255,255,255,0.8);  border-radius: 12px; 
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px; height: 100%; min-width: 350px;  padding-bottom: 20px;}  
+
+
+.optiona { font-size: 20px; font-weight: bold; color: #B08A50; padding-top: 35px; } 
+.abn {border-bottom: 1px solid #B08A50; width: 50%;  display: inline-block; margin-bottom: 20px; min-width: 190px; max-width: 200px}
+.aba {text-align: left; margin-top: 50px; font-weight: bold; color: #222222}
+.abs {text-align: left; border-bottom: 1px solid #D4D5D4; color: #222222}
+.abc {font-size: 15px;  font-weight: bold; padding-bottom: 10px; padding-top: 20px; color: #222222 } 
+
+.asdfd {padding-top: 10px; }   
+.ased {background: #B08A50; border: 1px solid #B08A50; width: 51%; height: 40px; color: #FFFFFF;   border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px; margin-left: -12px;}   
+.ased:hover {background: #B8935B; border: 1px solid #B08A50; width: 51%; height: 40px; color: #FFFFFF;} 
+.aseda {background: #B08A50; border: 1px solid #B08A50; width: 21%; height: 40px; color: #FFFFFF; border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;}
+.aseda:hover {background: #B8935B; border: 1px solid #B08A50; width: 21%; height: 40px; color: #FFFFFF;} 
+.dfds {border: 1px solid #D4D5D4}
+ 
+ 
+ .abcc {text-align: center; font: bold;}
+ 
+.pTa {margin-top: 10px;}  
+.pTb {margin-top: 10px; }  
+.pTc {margin-top: 10px;}  
+.pTd {margin-top: 10px;} 
+.pTee {margin-top: 10px;} 
+ 
+.name label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.name {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
+.pTa input { width: 275px; height: 45px; border: 1px solid #D4D5D4} 
+
+ 
+.nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameac {background-color: #E6CF99;  width: 120px; float: left; color: #4B271A;}
+.pTd input { width: 245px; height: 45px; border: 1px solid #D4D5D4} 
+ 
+
+.nameas label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameas {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
+.pTee input { width: 131px; height: 45px; border: 1px solid #D4D5D4} 
+
+.payTypea {text-align:left;  width: 380px; height: 320px;} 
+.pTe input {width: 25%;}
+ 
+ 
+ 
+ 
+  
+.paa {margin-top: 10px;}  
+.pab {margin-top: 10px; }  
+.pac {margin-top: 10px;}  
+.pad {margin-top: 10px;} 
+.paee {margin-top: 10px;} 
+.paae {margin-top: 10px;} 
+.paeee{margin-top: 10px; } 
+ 
+.nvme label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nvme {background-color: #E6CF99;  width: 30%; float: left; color: #4B271A;}
+.paa input { width: 70%; height: 45px; border: 1px solid #D4D5D4} 
+
+.nvmee label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nvmee {background-color: #E6CF99;  width: 31%; float: left; color: #4B271A;}
+.paae input { width: 32.8%; height: 45px; border: 1px solid #D4D5D4} 
+
+
+.nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameac {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
+.nameaca { width: 80%; height: 45px; border: 1px solid #D4D5D4} 
+.pad {width: 100%; height: 45px;}
+ 
+ 
+.nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameac {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
+.paee input { width: 65%; height: 45px; border: 1px solid #D4D5D4} 
+ 
+.nameas label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameas {background-color: #E6CF99;  width: 37%; float: left; color: #4B271A;}
+.paeee input { width: 63%; height: 45px; border: 1px solid #D4D5D4} 
+
+
+.payTypeb {text-align:left;  width: 100%; height: 420px;}  
+
+ 
+ 
+ 
+ 
+ 
+@media only screen and (max-width: 768px){
+	  
+.useroption {margin: 0 auto; text-align: center; min-height: 100%; height: 100%;  background-color: #F9F6E7; min-width: 330px; padding-bottom: 20px;}
+.useroptiona {display: inline-block; padding-top: 90px; padding-left: 10px; padding-right: 10px; }  
+.useroptionb {padding-left: 20px; padding-right: 20px; background: rgba(255,255,255,0.8);  border-radius: 12px; 
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px; height: 100%; min-width: 340px;  padding-bottom: 20px; }  
+
+
+.optiona { font-size: 20px; font-weight: bold; color: #B08A50; padding-top: 35px; } 
+.abn {border-bottom: 1px solid #B08A50; width: 50%;  display: inline-block; margin-bottom: 20px; min-width: 190px; max-width: 200px}
+.aba {text-align: left; margin-top: 20px; font-weight: bold; color: #222222}
+.abs {text-align: left; border-bottom: 1px solid #D4D5D4; color: #222222}
+.abc {font-size: 15px;  font-weight: bold; padding-bottom: 10px; padding-top: 20px; color: #222222 } 
+	
+	
+	.asdfd {padding-top: 10px; }   
+.ased {background: #B08A50; border: 1px solid #B08A50; width: 40%; height: 40px; color: #FFFFFF;   border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px; margin-left: -8px;}   
+.ased:hover {background: #B8935B; border: 1px solid #B08A50; width: 40%; height: 40px; color: #FFFFFF;} 
+.aseda {background: #B08A50; border: 1px solid #B08A50; width: 23%; height: 40px; color: #FFFFFF; border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;}
+.aseda:hover {background: #B8935B; border: 1px solid #B08A50; width: 23%; height: 40px; color: #FFFFFF;} 
+.dfds {border: 1px solid #D4D5D4}
+
+
+.pTa {margin-left: 13px;}  
+.pTb {margin-left: 13px; }  
+.pTc {margin-left: 13px;}  
+.pTd {margin-left: 13px;} 
+.pTee {margin-left: 13px;} 
+
+
+.name label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.name {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
+.pTa input { width: 175px; height: 45px; border: 1px solid #D4D5D4} 
+
+ 
+.nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameac {background-color: #E6CF99;  width: 120px; float: left; color: #4B271A;}
+.pTd input { width: 145px; height: 45px; border: 1px solid #D4D5D4} 
+ 
+
+.nameas label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameas {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
+.pTee input { width: 81px; height: 45px; border: 1px solid #D4D5D4} 
+	
+.payTypea {text-align:left; width: 95%; height: 310px;} 
+
+ 
+ 
+ 
+ 
+ 
+ 
+.nvme label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nvme {background-color: #E6CF99;  width: 30%; float: left; color: #4B271A;}
+.paa input { width: 70%; height: 45px; border: 1px solid #D4D5D4} 
+
+.nvmee label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nvmee {background-color: #E6CF99;  width: 31%; float: left; color: #4B271A;}
+.paae input { width: 32.3%; height: 45px; border: 1px solid #D4D5D4} 
+
+
+.nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameac {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
+.nameaca { width: 80%; height: 45px; border: 1px solid #D4D5D4} 
+.pad {width: 100%; height: 45px;}
+ 
+ 
+.nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameac {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
+.paee input { width: 65%; height: 45px; border: 1px solid #D4D5D4} 
+ 
+.nameas label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameas {background-color: #E6CF99;  width: 47%; float: left; color: #4B271A;}
+.paeee input { width: 53%; height: 45px; border: 1px solid #D4D5D4} 
+
+
+.payTypeb {text-align:left;  width: 100%; height: 420px;}  
+ 
+ 
+ 
+	
+	}

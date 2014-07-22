@@ -1,0 +1,15 @@
+#footerh { text-align: center; }
+.footerhomee{ display: inline-block; } 
+.footerhome { display: inline-block; }
+.aa {  float:left;  padding-left: 10px;  }  
+.aa a{color: #000000;}
+.aaaa {display: inline-block; text-align: center;} 
+.aaaa a{display: inline-block; padding-left:  20px; color: #D2691E; font-weight: bold;} 
+.ab {float: left; display: inline-block; } 
+.footcompany {font-size: 12px; }
+.ah a {color:#808080; font-size: 12px;  } 
+.footerbottom {width: 100%; }
+
+@media only screen and (max-width: 768px){
+.ab {float: none;} 
+	}

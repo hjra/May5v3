@@ -1,0 +1,140 @@
+.advanceo {padding-top: 100px; }
+#modal-background {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: .50;
+	-webkit-opacity: .5;
+	-moz-opacity: .5;
+	filter: alpha(opacity = 50);
+	z-index: 1000;
+}
+
+#modal-content {
+	background-color: white;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0 0 20px 0 #222;
+	-webkit-box-shadow: 0 0 20px 0 #222;
+	-moz-box-shadow: 0 0 20px 0 #222;
+	display: none;
+	height: 400px;
+	left: 50%;
+	margin: -120px 0 0 -160px;
+	padding: 10px;
+	position: fixed;
+	top: 30%;
+	width: 400px;
+	z-index: 1000;
+}
+
+#modal-background.active,#modal-content.active {
+	display: block;
+}
+
+.dragTop {
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin: 10px 2%;
+	cursor: move;
+}
+
+.dragImg {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 10px 2%;
+}
+
+#itemImage {
+	width: 300px;
+	height: 300px;
+}
+
+.selected {
+	/* background-color: white; */
+	/* ie를 제외한 최신 웹브라우저*/
+	background: none rgba(0, 0, 0, 0.1);
+	/* ie전용 백그라운드 필터 */
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#80000000',
+		endColorstr='#80000000');
+	color: Black;
+	width: 90px;
+	height: 90px;
+	-webkit-border-radius: 45px;
+	-moz-border-radius: 45px;
+	border-radius: 45px;
+}
+
+.drop {
+	position:relative;
+	background-image:url("/CShop/resources/img/cake/basket.png");
+	background-size: 80%;
+	background-repeat:no-repeat;
+	color: White;
+	width:400px;
+	height: 180px;
+	padding: 10px;
+	border-radius: 2em;
+	margin-top: 20px;
+}
+
+#itemBasket {
+	background-color: white;
+	color: White;
+	height: 200px;
+	padding: 10px;
+	border-radius: 2em;
+}
+
+.active {
+	/* background-color: #efd59b; */
+	cursor: crosshair;
+}
+.active#dropTop {
+	background-image:url("/CShop/resources/img/cake/basket.png");
+	background-size: 340px;
+	cursor: crosshair;
+}
+
+#sizeS {
+	width: 60px;
+	height: 60px;
+	right: 20%;
+}
+
+#sizeM {
+	width: 50px;
+	height: 50px;
+	right: 53%;
+}
+
+#sizeL {
+	width: 40px;
+	height: 40px;
+	right: 80%;
+}
+
+#creamImg{
+	position:absolute;
+	width: 90px;
+	height: 90px;
+	bottom: 0;
+	left: 250px;
+}
+
+.sizeRadio {
+	position: relative;
+	width: 280px;
+	height: 50px;
+}
+.sizeImgRadio {
+	position: absolute;
+	bottom: 0;
+}

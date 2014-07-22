@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import url("bootstrap.min.css");
+@import url("bootstrap-theme.min.css");
+@import url("common-layout.css");
+@import url("nody.css");
+/*
+	sass style kit
+	auther        : hojugn ahn (open9.net)
+	version       : 0.5
+	concept       : interface set, auto preload image, easy hack, easy animation
+*/
+/* table styilus*/
+/* init var */
+/* 기본 */
+html, body { width: 100%; height: 100%; max-height: 100%; min-width: 960px; position: relative; overflow: hidden; border-collapse: collapse; border-spacing: 0; }
+
+body { background: #f0f3f5; overflow-y: auto; }
+
+/*application*/
+#master-header { position: relative; width: 100%; background: #34383c; color: #eee; height: 40px; max-height: 40px; line-height: 40px; }
+#master-header .header-heading-title div, #master-header .header-heading-commands div { display: inline-block; zoom: 1; *display: inline; }
+#master-header .header-heading-title { position: relative; }
+#master-header .header-heading-title div { text-align: center; }
+#master-header .header-heading-title div.folder { background: #1c1e21; width: 40px; height: 40px; }
+#master-header .header-heading-title div.brand { background: #282b2e; width: 160px; height: 40px; }
+#master-header .header-heading-title div.location { white-space: nowrap; text-overflow: ellipsis; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; overflow: hidden; word-wrap: normal !important; position: absolute; left: 220px; height: 40px; line-height: 40px; }
+#master-header .header-heading-commands .logout { padding-left: 5px; padding-right: 20px; }
+
+main { /* 1column layout */ /* 2column layout */ /*#gnb*/ }
+main section.local-contents { padding: 15px; }
+main section.local-side { position: absolute; top: 0; left: 0; width: 200px; height: 100%; margin-right: -100%; z-index: 1; }
+main section.local-side-contents { position: relative; padding-top: 20px; padding-left: 220px; padding-right: 20px; }
+main #gnb { top: 40px; left: 0px; position: absolute; height: 100%; z-index: 1; background: #e9ebec; vertical-align: top; width: 200px; /*li*/ }
+main #gnb menu { width: 200px; border: 1px solid #c8ccd0; border-top: none; }
+main #gnb li { position: relative; color: #7c848d; max-height: 40px; }
+main #gnb li div { display: inline-block; zoom: 1; *display: inline; }
+main #gnb li div.icon { width: 38px; height: 40px; line-height: 40px; text-align: center; border-top: 1px solid #c8ccd0; }
+main #gnb li div.icon span { font-size: 15px; }
+main #gnb li:hover div.icon { background: #f0f6fa; }
+main #gnb li div.text { position: absolute; top: 0px; left: 38px; width: 160px; }
+main #gnb li div.text dl { position: relative; border-top: none; }
+main #gnb li div.text dl dt, main #gnb li div.text dl dd { width: 160px; padding-left: 10px; background: #f4f5f7; height: 40px; border-top: 1px solid #c8ccd0; line-height: 40px; }
+main #gnb li div.text dl dt { background: #f0f6fa; position: absolute; border-left: 1px solid #c8ccd0; top: 0px; left: 0px; }
+main #gnb li div.text dl dd { border-right: 1px solid #c8ccd0; position: relative; top: 0px; left: 161px; display: none; }
+main #gnb li div.text dl dd span { float: right; margin-top: 12px; margin-right: 5px; color: #ccc; }
+main #gnb li div.text dl dd:hover { background: #fcfcfc; }
+main #gnb li div.text dl dd:hover span { color: #999; }
+main #gnb li div.text dl dd:last-child { border-bottom: 1px solid #c8ccd0; }
+main #gnb li:hover div.text dl dd { display: block; }
+
+@media only screen and (max-device-width: 480px) { main { padding-left: 40px; z-index: 3; }
+  #gnb { width: 100%; background: white; display: none; z-index: 4; }
+  #gnb menu { width: 100%; }
+  #gnb li { max-height: none; margin-bottom: 0px; padding-bottom: 0px; }
+  #gnb li div.icon { position: absolute; top: 0px; left: 0px; }
+  #gnb li div.text { position: relative; width: 100%; }
+  #gnb li div.text dl { width: 100%; }
+  #gnb li div.text dl dt, #gnb li div.text dl dd { display: block; position: relative; left: 0px; top: 0px; float: left; width: 100%; }
+  #gnb li div.text dl dd { border-left: 1px solid #c8ccd0; } }
+.servey-form-contents .panel-title { line-height: 22px; }
+
+.servey-form-contents .servey-text-group { border-bottom: 1px solid #eee; }
+
+.servey-form-contents .servey-text-group:first-child { border-top: 1px solid #eee; }
+
+.servey-form-contents .servey-text-group .layout-left { width: 80%; padding-top: 10px; padding-bottom: 10px; }
+
+.servey-form-contents .servey-text-group .layout-right { padding-top: 6px; }
+
+#page-admin-main .main-section { border: 1px solid #eee; padding: 10px; }
+
+#page-admin-main .main-section h4 { padding-top: 5px; padding-bottom: 0px; }

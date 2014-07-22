@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.may5.dao.SttMapper">
+   
+ 	<!-- dailyReport -->
+ 	<!-- 오늘의 전체 주문 수 -->
+ 	<select id="getOrderCount" resultType="int">
+ 		select count(*) from orders
+ 	</select>
+ 	
+ 	<!-- 주문한 케익 수량 수 -->
+ 	<select id="getCakeCount" resultType="int">
+ 		select sum(orderAmount) from orders
+ 	</select>
+ 
+ 	<!-- 시간별 주문 수량 -->
+	<select id="orderCountPerHour" resultType="OrderCount" >
+		select to_char(orderDate, 'HH24') a, count(to_char(orderDate, 'HH24')) b
+		from Orders where to_char(orderDate, 'YYYY-MM-DD')
+		= #{orderDate} group by to_char(orderDate, 'HH24')
+	</select>
+
+ 	<!-- 전체회원수 -->
+	<select id="getCustomerCount" resultType="int">
+		select count(*) from customer
+	</select>
+
+
+<!-- 탈퇴한회원수 -->
+
+<select id="getDCustomerCount" resultType="int">
+
+select count(levelCode) from customer where levelCode='D'
+
+</select>
+
+
+<!-- 오늘 팔린 메뉴 종류수-->
+
+<select id="getDailyCountForMenu" resultType="int">
+
+select count(itemId)
+
+from (select itemId, count(itemId) itemCnt from orders group by itemId order by itemCnt)
+
+</select>
+
+
+
+<!-- 메뉴별 팔린 수 -->
+
+<select id="getCountByMenu" resultType="Orders">
+
+select itemId, sum(orderAmount) from orders group by itemId
+
+</select>
+
+ 	
+</mapper>

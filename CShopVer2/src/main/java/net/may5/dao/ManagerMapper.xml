@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.may5.dao.ManagerMapper">
+   
+   <!-- 관리자페이지 -->
+	<!-- 로그인 -->
+	<select id="loginMng" resultType="Manager">
+		select * from Manager where mngId=#{mngId} and mngPassword=#{mngPassword}
+	</select>
+	
+	<!-- 직원정보 -->
+	<select id="allMngInfoList" resultType="Manager">
+		select * from Manager	
+	</select>
+</mapper>

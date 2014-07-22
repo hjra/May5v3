@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.may5.dao.QnAMapper">
+   
+<select id="qnaGetList" resultType="QnA">
+select	Q.boardCode, Q.boardTitle, Q.boardDate, Q.postPassword, Q.postContents, C.cstId, C.cstCode
+from 	QnA Q inner join Customer C
+on Q.cstCode = C.cstCode
+ORDER 	BY Q.boardCode DESC
+</select>
+
+<select id="qnaGetList2" resultType="QnA">
+select	Q.boardCode, Q.boardTitle, Q.boardDate, Q.postPassword, Q.postContents, C.cstId, C.cstCode
+from 	QnA Q inner join Customer C
+on Q.cstCode = C.cstCode
+ORDER 	BY Q.boardCode DESC
+</select>
+
+<!-- boardEdit.jsp로 이동할때 해당 게시글에 포함된 댓글과 게시글의 정보만을 가지고 오는 구문입니다. inner join을 하게되면
+댓글이 입력되있지않은 게시글은 불러올수 없으니 주의하십시오. left outer는 QnA테이블 기준으로 정렬하는것입니다. -->
+<select id="qnaReplyList" resultType="QnA">
+select	Q.boardCode, Q.boardTitle, Q.boardDate, Q.postPassword, Q.postContents, C.cstId, C.cstCode, R.replyCode, R.qnaReply, R.replyDate, R.replyCount
+from 	QnA Q inner join Customer C
+on Q.cstCode = C.cstCode
+left outer join QnAComment R
+on 		Q.boardCode = R.boardCode 
+where Q.boardCode = #{boardCode}
+ORDER 	BY Q.boardCode DESC
+
+</select>
+
+<select id="getQnAContent" resultType="QnA">
+	select Q.*, C.cstCode, C.cstId from qna Q
+	inner join customer C
+	on q.cstcode = c.cstcode
+	where Q.boardcode = #{boardCode}
+</select>
+
+<select id="getQnAContentReplies" resultType="QnA">
+	select R.*, C.cstCode, C.cstId from qnacomment R
+	inner join Customer C
+	on r.cstcode = c.cstcode
+	where R.boardcode = #{boardCode}
+</select>
+
+<insert id="setReply" parameterType="net.may5.dto.QnA">
+		insert into QnAcomment(boardCode, replyCode, qnaReply, replyDate, cstCode)
+		values(#{boardCode}, RLY.nextval, #{qnaReply}, sysDate, #{cstCode})
+	</insert>
+<!-- 사용자가 입력하는 qnaReply만을 컨트롤러에서 set을 해준다 -->
+
+<insert id="mngReply" parameterType="net.may5.dto.QnA">
+		insert into QnAcomment(boardCode, replyCode, qnaReply, replyDate, cstCode)
+		values(#{boardCode}, RLY.nextval, #{qnaReply}, sysDate, 0)
+	</insert>
+
+
+<select id="qnaGetContents" resultType="QnA"> <!-- resultType는 DTO이름  -->
+select	Q.*, C.cstId
+from 	QnA Q inner join Customer C
+on 		Q.cstCode = C.cstCode
+where   Q.boardCode = #{boardCode}
+</select>
+
+<!-- sysDate는 오라클자체에서 처리해서 xml에만 넣으면 되고
+아래의 구문들은 각각의 순서를 맞쳐야 한다. -->
+<insert id="writeProc" parameterType="map"> 
+	insert into QnA(boardCode,boardTitle, postContents, postPassword,cstCode, boardDate)
+	values( QAB.nextval, #{boardTitle}, #{postContents}, #{postPassword},#{cstCode}, sysDate)
+</insert>
+
+<delete id="deleteBoard" parameterType="int">
+delete from QNA
+		where
+		BOARDCODE =
+		#{boardCode}
+	</delete>
+
+<update id="updateBoard" parameterType="QnA">
+		update QNA set
+		boardTitle=#{boardTitle},
+		postContents=#{postContents},
+		boardDate=sysDate
+		where
+		boardCode=#{boardCode}
+	</update>
+	
+<select id="getBoard" parameterType="int" resultType="QnA">
+		
+		select
+		c.cstId, Q.boardTitle, Q.boardDate, Q.postContents,Q.boardCode
+		from QNA Q inner join customer C
+		on q.cstCode=c.cstCode 
+		where
+		BOARDCODE = #{boardCode}
+		
+	</select>
+
+</mapper>

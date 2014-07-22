@@ -1,0 +1,8 @@
+
+/* #header{ background:#FF8C0A;color:white; padding:10px;} 
+#brand{cursor:pointer; margin:0px; font-size:20px;}
+#brand:hover{color:#ffdddd;}*/
+#body{min-height:600px;position:relative;}
+#body #location-menu{position:absolute;width:200px;height:600px;left:0;top:0;border-right:1px solid #ccc;}
+#body #location-main{padding-left:220px;padding-top:60px;padding-right:20px;text-align:center;}
+#footer{background:#ddd;padding-top:40px;padding-bottom:40px;text-align:center;}
