@@ -138,8 +138,6 @@ function div_OnOff5(v5, id) {
 	}
 }
 
-
-
 /*주소찾기(도로명주소)*/
 $(document).ready(function() {
 	
