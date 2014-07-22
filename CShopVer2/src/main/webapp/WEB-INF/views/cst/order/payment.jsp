@@ -44,7 +44,9 @@
 					<c:if test="${itemId.itemId == orders.itemId }">
 						<c:forEach var="optionPrice" items="${optionPrice }">
 							<c:if test="${optionPrice.optionCode == orders.optionCode }">
-								<input type="text" value="${itemId.price*orders.orderAmount + optionPrice.optionPrice }" name="totalPrice">
+								<input type="text" value="${itemId.price*orders.orderAmount + 
+
+optionPrice.optionPrice }" name="totalPrice">
 							</c:if>
 						</c:forEach>
 					</c:if>
@@ -100,7 +102,9 @@
 					<c:if test="${itemId.itemId == orders.itemId }">
 						<c:forEach var="optionPrice" items="${optionPrice }">
 							<c:if test="${optionPrice.optionCode == orders.optionCode }">
-								<input type="text" value="${itemId.price*orders.orderAmount + optionPrice.optionPrice }" name="totalPrice">
+								<input type="text" value="${itemId.price*orders.orderAmount + 
+
+optionPrice.optionPrice }" name="totalPrice">
 							</c:if>
 						</c:forEach>
 					</c:if>
@@ -139,7 +143,9 @@
 					<c:if test="${itemId.itemId == orders.itemId }">
 						<c:forEach var="optionPrice" items="${optionPrice }">
 							<c:if test="${optionPrice.optionCode == orders.optionCode }">
-								<input type="text" value="${itemId.price*orders.orderAmount + optionPrice.optionPrice }" name="totalPrice">
+								<input type="text" value="${itemId.price*orders.orderAmount + 
+
+optionPrice.optionPrice }" name="totalPrice">
 							</c:if>
 						</c:forEach>
 					</c:if>
@@ -183,6 +189,7 @@
 		<input type="hidden" value="${orders.dlvinfoyn }" name="dlvinfoyn">
 		<input type="hidden" value="${orders.dlvwarn }" name="dlvwarn">
 		<input type="hidden" value="${orders.payCode }" name="payCode">
+		
 	<p>
 		<input type="reset" value="재입력"/>
 		<input type="button" onclick="javascript:history.back(-1)" value="이전"/>
