@@ -4,8 +4,9 @@
 	<!-- 아코디언 자바스크립트 -->
 	<script src="/CShop/resources/img/about/jquery.js"></script>
 	<script>
+	
 	$(function(){
-		$("#accordion").tabs("#accordion div.pane", {tabs:'h2',effect:'slide',initialIndex:null});
+		$("#accordion").tabs("#accordion div.pane", {tabs:'h2',effect:'slide'});
 	});
 	
 	</script>
@@ -20,6 +21,8 @@
 	width : 300px;
 	border:1px solid #333;
 	-background:665;
+	display: block;
+	
 	}
 
 	#accordion h2{
@@ -31,11 +34,15 @@
 	border:1px solid #fff;
 	border-bottom:1px solid #ddd;
 	cursor:pointer;
+	display: block;
+	overflow: hidden;
 	}
 
 	#accordion h2.current{
 	cursor:default;
 	background-color:#fff;
+	display: block;
+	overflow: hidden;
 	}
 
 	#accordion.pane{
@@ -46,6 +53,8 @@
 	paddion:15px;
 	color:#fff;
 	font-size:12px;
+	display: block;
+	overflow: hidden;
 	}
 
 	#accordion.pane h3{
@@ -53,6 +62,8 @@
 	margin:0 0 -5px 0;
 	font-size:16px;
 	color:#999;
+	display: block;
+	overflow: hidden;
 	}
 
 
