@@ -269,10 +269,8 @@
 function callNumber(num){
    location.href="tel:"+num;
 }
-<br></br>
 </script>
-<br></br>
-<br></br>
+
 
 
 <center>
@@ -319,11 +317,11 @@ C# 고유의 디자인으로 만들어진 케익과 차별화된 맛 그리고 �
 
 
 
-<center>
+<!-- <center>
 <h5>이것은 QR코드입니다 나중에 시연영상 할때 C#관리자처럼 이름을 바꿔서 실시간 상담이 가능하도록 설정하면 됩니다.</h5><p>
 <h3>C# 관리자에게 실시간 상담을 받으세요~<p>카톡 앱 안에서 QR코드 친구등록을 누르시면 자동으로 친구등록이 됩니다!!!<p>(상담시간 오전 9시~오후 6시)</h3>
 <img src="/CShop/resources/img/about/qrCode.png" alt="QR코드" style="width: 170px; margin: 181px">
-</center>
+</center> -->
 
 
 

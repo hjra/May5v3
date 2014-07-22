@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
-<%@ page session="true" %>
-
-<form action = "board.do" method = "post">
-	제목 : <input type = "text" name = "title" size = "20" /><br>
-	작성자 : <input type = "text" name = "writerName" /><br>
-	글 암호 : <input type = "password" name = "password" /><br>
-	글 내용 : <br>
-      <textarea name = "content" cols = "40" rows = "5"></textarea>
-	  <br>
-	<f:form action="board.do" method="Post">
-	<input type="submit" value="게시글올리기">
-	</f:form>
-	<f:form action="board.do" method="Post">
-	<input type="submit" value="삭제">
-	</f:form>	
-	 
-</form>
-=======
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
@@ -27,8 +5,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page session="true"%>
-<h1>게시글 수정 페이지으로 이동하셨습니다!!!</h1>
-현재 접속한 cstCode: ${sessionScope.cstLogin.cstCode}<p>
 
 <script type="text/javascript">
 	function updateGo() {
@@ -50,7 +26,7 @@
 
  										
 
-		<h1 align="center">boardContext</h1>
+		<h1 align="center">게시글 확인</h1>
 		<font size="2">
 		
 			
@@ -169,7 +145,3 @@
 
 
 </form>
-	
-	
-	
->>>>>>> branch 'master' of https://github.com/hjra/may5.git

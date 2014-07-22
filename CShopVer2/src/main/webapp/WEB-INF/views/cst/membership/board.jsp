@@ -3,17 +3,18 @@
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page session="true" %>
+
 	<style type="text/css">
     body{
-        line-height:2em;        
+        line-height:3em;        
         font-family:"맑은 고딕";
-}
+	}
     ul, li{ 
         list-style:none;
         text-align:center;
         padding:0;
         margin:0;
-}
+	}
 
     #mainWrapper{
         width: 800px;
@@ -26,7 +27,7 @@
         height:40px;
         vertical-align:middle;
         line-height:30px;
-}
+	}
 
     #ulTable {margin-top:10px;}
     
@@ -35,20 +36,20 @@
         background-color:#c9c9c9;
         font-weight:bold;
         text-align:center;
-}
-
+	}
+	
     #ulTable > li > ul {
         clear:both;
         padding:0px auto;
         position:relative;
         min-width:40px;
-}
+	}
     #ulTable > li > ul > li { 
         float:left;
         font-size:10pt;
         border-bottom:1px solid silver;
         vertical-align:baseline;
-}    
+	}    
 
     #ulTable > li > ul > li:first-child               {width:10%;} /*No 열 크기*/
     #ulTable > li > ul > li:first-child +li           {width:45%;} /*제목 열 크기*/
@@ -61,14 +62,14 @@
         margin:0 auto; 
         width:220px; 
         height:50px;
-}
+	}
 
     #divPaging > div {
         float:left;
         width: 30px;
         margin:0 auto;
         text-align:center;
-}
+	}
 
     #liSearchOption {clear:both;}
     #liSearchOption > div {
@@ -77,15 +78,45 @@
         width:auto; 
         height:100px; 
 
-}
+	}
 
     .left {
         text-align : left;
-}
+	}
 
     .redBtn2{margin-left: 360px;}     
+	
+	
+	
+	
+	.title input{
+	
+	
+ 	 font-size: 1;
+	 width: 355px;
+	 height: 35px;
+	 margin: 0px;
+	 padding: 0;
+	 padding-top :-5px; 
+	 border-radius: 5px;
+	 border:1px solid #4081AF;
+	 margin-top: 3px;
+	 
+	}
+	
+	.title:hover {
+	 position: relative;
+	 margin-top: 2px;
+	 moz-box-shadow: 2px 2px 5px #c9c9c9;
+	 webkit-box-shadow: 2px 2px 5px #c9c9c9;
+	 box-shadow: 2px 2px 5px #c9c9c9;
+	 
+}		
+	
+	
+	.title  { height: 42px}
 
-</style>
+	</style>
 	
 	
 	
@@ -121,7 +152,9 @@
                             
                             <li class="left">
                             <f:form action="boardCheck.do" method="post" commandName="qnA">
-							<input type="submit" name="boardTitle" value="${board.boardTitle}">
+                            	<div class="title">
+							<input type="submit" name="boardTitle" value="${board.boardTitle}" >
+								</div>
 								<input type="hidden" name="boardCode" value="${board.boardCode}">
 								<input type="hidden" name="postPassword" value="${board.postPassword}">
 								<input type="hidden" name="cstCode" value="${board.cstCode}">
@@ -157,10 +190,6 @@
 					
 			</tr>
             
-         
-            
-            
-            
             
 		<!--게시판 페이징 영역 -->
             <li>
@@ -182,6 +211,7 @@
                         <option value='T'>제목</option>
                         <option value='C'>내용</option>
                     </select>
+                    
                     <input id='txtKeyWord' />
                     <input type='button' value='검색'/>
                 </div>
