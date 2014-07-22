@@ -42,7 +42,12 @@
 							<input type="text" name="cardMessage" placeholder="ex)생일축하합니다" class="dfds"/>
 						</td>
 					</tr>
-					
+					<tr>
+						<th scope="row"><label for="url">URL입력</label></th>
+						<td>
+							<input type="text" name="url" value="" placeholder="ex)http://www.naver.com/" style="width: 500px" maxlength="200"/>
+						</td>
+					</tr>
 				</tbody>
 			</table>
 			<div class="asdfd">

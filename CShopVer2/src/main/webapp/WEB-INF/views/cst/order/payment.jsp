@@ -183,6 +183,7 @@
 		<input type="hidden" value="${orders.dlvinfoyn }" name="dlvinfoyn">
 		<input type="hidden" value="${orders.dlvwarn }" name="dlvwarn">
 		<input type="hidden" value="${orders.payCode }" name="payCode">
+		<input type="hidden" value="${orders.url }" name="url">
 	<p>
 		<input type="reset" value="재입력"/>
 		<input type="button" onclick="javascript:history.back(-1)" value="이전"/>

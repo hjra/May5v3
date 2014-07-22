@@ -78,527 +78,403 @@ public class Orders {
 	private String wayType;
 	
 	private int totalPrice;
-
+	private String url;
 	public String getOrderCode() {
 		return orderCode;
 	}
-
 	public void setOrderCode(String orderCode) {
 		this.orderCode = orderCode;
 	}
-
 	public Date getOrderDate() {
 		return orderDate;
 	}
-
 	public void setOrderDate(Date orderDate) {
 		this.orderDate = orderDate;
 	}
-
 	public String getSameTimeCount() {
 		return sameTimeCount;
 	}
-
 	public void setSameTimeCount(String sameTimeCount) {
 		this.sameTimeCount = sameTimeCount;
 	}
-
 	public int getPayCode() {
 		return payCode;
 	}
-
 	public void setPayCode(int payCode) {
 		this.payCode = payCode;
 	}
-
 	public String getPayType() {
 		return payType;
 	}
-
 	public void setPayType(String payType) {
 		this.payType = payType;
 	}
-
 	public int getOptionCode() {
 		return optionCode;
 	}
-
 	public void setOptionCode(int optionCode) {
 		this.optionCode = optionCode;
 	}
-
 	public String getOptionType() {
 		return optionType;
 	}
-
 	public void setOptionType(String optionType) {
 		this.optionType = optionType;
 	}
-
 	public int getOptionPrice() {
 		return optionPrice;
 	}
-
 	public void setOptionPrice(int optionPrice) {
 		this.optionPrice = optionPrice;
 	}
-
 	public int getDlvChargeCode() {
 		return dlvChargeCode;
 	}
-
 	public void setDlvChargeCode(int dlvChargeCode) {
 		this.dlvChargeCode = dlvChargeCode;
 	}
-
 	public int getDlvCharge() {
 		return dlvCharge;
 	}
-
 	public void setDlvCharge(int dlvCharge) {
 		this.dlvCharge = dlvCharge;
 	}
-
 	public int getNoticeCode() {
 		return noticeCode;
 	}
-
 	public void setNoticeCode(int noticeCode) {
 		this.noticeCode = noticeCode;
 	}
-
 	public int getOrderAmount() {
 		return orderAmount;
 	}
-
 	public void setOrderAmount(int orderAmount) {
 		this.orderAmount = orderAmount;
 	}
-
 	public int getPointCode() {
 		return pointCode;
 	}
-
 	public void setPointCode(int pointCode) {
 		this.pointCode = pointCode;
 	}
-
 	public String getZipCode() {
 		return zipCode;
 	}
-
 	public void setZipCode(String zipCode) {
 		this.zipCode = zipCode;
 	}
-
 	public String getZipNumber() {
 		return zipNumber;
 	}
-
 	public void setZipNumber(String zipNumber) {
 		this.zipNumber = zipNumber;
 	}
-
 	public String getSido() {
 		return sido;
 	}
-
 	public void setSido(String sido) {
 		this.sido = sido;
 	}
-
 	public String getSigungu() {
 		return sigungu;
 	}
-
 	public void setSigungu(String sigungu) {
 		this.sigungu = sigungu;
 	}
-
 	public String getDongubmyon() {
 		return dongubmyon;
 	}
-
 	public void setDongubmyon(String dongubmyon) {
 		this.dongubmyon = dongubmyon;
 	}
-
 	public String getDoromyong() {
 		return doromyong;
 	}
-
 	public void setDoromyong(String doromyong) {
 		this.doromyong = doromyong;
 	}
-
 	public String getBuildingNum1() {
 		return buildingNum1;
 	}
-
 	public void setBuildingNum1(String buildingNum1) {
 		this.buildingNum1 = buildingNum1;
 	}
-
 	public String getBuildingNum2() {
 		return buildingNum2;
 	}
-
 	public void setBuildingNum2(String buildingNum2) {
 		this.buildingNum2 = buildingNum2;
 	}
-
 	public String getSigunguBuildingName() {
 		return sigunguBuildingName;
 	}
-
 	public void setSigunguBuildingName(String sigunguBuildingName) {
 		this.sigunguBuildingName = sigunguBuildingName;
 	}
-
 	public String getDong() {
 		return dong;
 	}
-
 	public void setDong(String dong) {
 		this.dong = dong;
 	}
-
 	public String getLi() {
 		return li;
 	}
-
 	public void setLi(String li) {
 		this.li = li;
 	}
-
 	public String getJibunNum1() {
 		return jibunNum1;
 	}
-
 	public void setJibunNum1(String jibunNum1) {
 		this.jibunNum1 = jibunNum1;
 	}
-
 	public String getJibunNum2() {
 		return jibunNum2;
 	}
-
 	public void setJibunNum2(String jibunNum2) {
 		this.jibunNum2 = jibunNum2;
 	}
-
 	public String getOrderDetailAddress() {
 		return orderDetailAddress;
 	}
-
 	public void setOrderDetailAddress(String orderDetailAddress) {
 		this.orderDetailAddress = orderDetailAddress;
 	}
-
 	public String getReceiverName() {
 		return receiverName;
 	}
-
 	public void setReceiverName(String receiverName) {
 		this.receiverName = receiverName;
 	}
-
 	public String getReceiverCP() {
 		return receiverCP;
 	}
-
 	public void setReceiverCP(String receiverCP) {
 		this.receiverCP = receiverCP;
 	}
-
 	public String getReceiverEmail() {
 		return receiverEmail;
 	}
-
 	public void setReceiverEmail(String receiverEmail) {
 		this.receiverEmail = receiverEmail;
 	}
-
 	public int getStockAmount() {
 		return stockAmount;
 	}
-
 	public void setStockAmount(int stockAmount) {
 		this.stockAmount = stockAmount;
 	}
-
 	public String getReceiverPhone() {
 		return receiverPhone;
 	}
-
 	public void setReceiverPhone(String receiverPhone) {
 		this.receiverPhone = receiverPhone;
 	}
-
 	public Date getDlvEndDate() {
 		return dlvEndDate;
 	}
-
 	public void setDlvEndDate(Date dlvEndDate) {
 		this.dlvEndDate = dlvEndDate;
 	}
-
 	public String getSizeCode() {
 		return sizeCode;
 	}
-
 	public void setSizeCode(String sizeCode) {
 		this.sizeCode = sizeCode;
 	}
-
 	public String getCstCode() {
 		return cstCode;
 	}
-
 	public void setCstCode(String cstCode) {
 		this.cstCode = cstCode;
 	}
-
 	public String getNoticeComment() {
 		return noticeComment;
 	}
-
 	public void setNoticeComment(String noticeComment) {
 		this.noticeComment = noticeComment;
 	}
-
 	public String getNoticeImg() {
 		return noticeImg;
 	}
-
 	public void setNoticeImg(String noticeImg) {
 		this.noticeImg = noticeImg;
 	}
-
 	public String getItemId() {
 		return itemId;
 	}
-
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
-
 	public String getCstId() {
 		return cstId;
 	}
-
 	public void setCstId(String cstId) {
 		this.cstId = cstId;
 	}
-
 	public String getLevelCode() {
 		return levelCode;
 	}
-
 	public void setLevelCode(String levelCode) {
 		this.levelCode = levelCode;
 	}
-
 	public String getItemName() {
 		return itemName;
 	}
-
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
-
 	public int getPrice() {
 		return price;
 	}
-
 	public void setPrice(int price) {
 		this.price = price;
 	}
-
 	public int getItemCnt() {
 		return itemCnt;
 	}
-
 	public void setItemCnt(int itemCnt) {
 		this.itemCnt = itemCnt;
 	}
-
 	public String getCstName() {
 		return cstName;
 	}
-
 	public void setCstName(String cstName) {
 		this.cstName = cstName;
 	}
-
 	public String getCstCP() {
 		return cstCP;
 	}
-
 	public void setCstCP(String cstCP) {
 		this.cstCP = cstCP;
 	}
-
 	public String getCstEmail() {
 		return cstEmail;
 	}
-
 	public void setCstEmail(String cstEmail) {
 		this.cstEmail = cstEmail;
 	}
-
 	public String getNoticeType() {
 		return noticeType;
 	}
-
 	public void setNoticeType(String noticeType) {
 		this.noticeType = noticeType;
 	}
-
 	public String getCardMessage() {
 		return cardMessage;
 	}
-
 	public void setCardMessage(String cardMessage) {
 		this.cardMessage = cardMessage;
 	}
-
 	public String getDlvwarn() {
 		return dlvwarn;
 	}
-
 	public void setDlvwarn(String dlvwarn) {
 		this.dlvwarn = dlvwarn;
 	}
-
 	public String getDlvinfoyn() {
 		return dlvinfoyn;
 	}
-
 	public void setDlvinfoyn(String dlvinfoyn) {
 		this.dlvinfoyn = dlvinfoyn;
 	}
-
 	public int getCardCode() {
 		return cardCode;
 	}
-
 	public void setCardCode(int cardCode) {
 		this.cardCode = cardCode;
 	}
-
 	public String getCardName() {
 		return cardName;
 	}
-
 	public void setCardName(String cardName) {
 		this.cardName = cardName;
 	}
-
 	public int getCardSectionCode() {
 		return cardSectionCode;
 	}
-
 	public void setCardSectionCode(int cardSectionCode) {
 		this.cardSectionCode = cardSectionCode;
 	}
-
 	public String getCardSectionType() {
 		return cardSectionType;
 	}
-
 	public void setCardSectionType(String cardSectionType) {
 		this.cardSectionType = cardSectionType;
 	}
-
 	public String getSaveCode() {
 		return saveCode;
 	}
-
 	public void setSaveCode(String saveCode) {
 		this.saveCode = saveCode;
 	}
-
 	public String getSaveType() {
 		return saveType;
 	}
-
 	public void setSaveType(String saveType) {
 		this.saveType = saveType;
 	}
-
 	public int getTelecomCode() {
 		return telecomCode;
 	}
-
 	public void setTelecomCode(int telecomCode) {
 		this.telecomCode = telecomCode;
 	}
-
 	public String getTelecomName() {
 		return telecomName;
 	}
-
 	public void setTelecomName(String telecomName) {
 		this.telecomName = telecomName;
 	}
-
 	public int getTermCode() {
 		return termCode;
 	}
-
 	public void setTermCode(int termCode) {
 		this.termCode = termCode;
 	}
-
 	public String getInstallmentTerm() {
 		return installmentTerm;
 	}
-
 	public void setInstallmentTerm(String installmentTerm) {
 		this.installmentTerm = installmentTerm;
 	}
-
 	public int getDeductionCode() {
 		return deductionCode;
 	}
-
 	public void setDeductionCode(int deductionCode) {
 		this.deductionCode = deductionCode;
 	}
-
 	public String getDeductionName() {
 		return deductionName;
 	}
-
 	public void setDeductionName(String deductionName) {
 		this.deductionName = deductionName;
 	}
-
 	public int getWayCode() {
 		return wayCode;
 	}
-
 	public void setWayCode(int wayCode) {
 		this.wayCode = wayCode;
 	}
-
 	public String getWayType() {
 		return wayType;
 	}
-
 	public void setWayType(String wayType) {
 		this.wayType = wayType;
 	}
-
 	public int getTotalPrice() {
 		return totalPrice;
 	}
-
 	public void setTotalPrice(int totalPrice) {
 		this.totalPrice = totalPrice;
 	}
-
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -701,6 +577,7 @@ public class Orders {
 				+ ((telecomName == null) ? 0 : telecomName.hashCode());
 		result = prime * result + termCode;
 		result = prime * result + totalPrice;
+		result = prime * result + ((url == null) ? 0 : url.hashCode());
 		result = prime * result + wayCode;
 		result = prime * result + ((wayType == null) ? 0 : wayType.hashCode());
 		result = prime * result + ((zipCode == null) ? 0 : zipCode.hashCode());
@@ -708,7 +585,6 @@ public class Orders {
 				+ ((zipNumber == null) ? 0 : zipNumber.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -972,6 +848,11 @@ public class Orders {
 			return false;
 		if (totalPrice != other.totalPrice)
 			return false;
+		if (url == null) {
+			if (other.url != null)
+				return false;
+		} else if (!url.equals(other.url))
+			return false;
 		if (wayCode != other.wayCode)
 			return false;
 		if (wayType == null) {
@@ -991,7 +872,6 @@ public class Orders {
 			return false;
 		return true;
 	}
-
 	@Override
 	public String toString() {
 		return "Orders [orderCode=" + orderCode + ", orderDate=" + orderDate
@@ -1027,7 +907,8 @@ public class Orders {
 				+ telecomName + ", termCode=" + termCode + ", installmentTerm="
 				+ installmentTerm + ", deductionCode=" + deductionCode
 				+ ", deductionName=" + deductionName + ", wayCode=" + wayCode
-				+ ", wayType=" + wayType + ", totalPrice=" + totalPrice + "]";
+				+ ", wayType=" + wayType + ", totalPrice=" + totalPrice
+				+ ", url=" + url + "]";
 	}
 
 	

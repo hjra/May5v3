@@ -160,6 +160,7 @@
 		<input type="hidden" value="${orders.orderDetailAddress }" name="orderDetailAddress">
 		<input type="hidden" value="${orders.dlvinfoyn }" name="dlvinfoyn">
 		<input type="hidden" value="${orders.dlvwarn }" name="dlvwarn">
+		<input type="hidden" value="${orders.url }" name="url">
 		<p>
 			<input type="reset" value="재입력" class="ased" style="font-weight:bold"/>
 			<input type="button" onclick="javascript:history.back(-1)" value="이전" class="aseda" style="font-weight:bold"/>
