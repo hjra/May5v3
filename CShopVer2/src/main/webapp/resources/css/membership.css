@@ -1,12 +1,11 @@
-@CHARSET "UTF-8";
 .row_group { 
     padding: 10px;
-    border: 2px solid pink;
+    border: 2px solid #b08a50;
     margin: 0px; 
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    background-color: pink;}
+    background-color: #b08a50;}
     
 .row_group div{width: 100%;}
 .row_text {width: 90%;}
