@@ -1,8 +1,8 @@
-.useroption {margin: 0 auto; text-align: center; min-height: 100%; height: 900px;  background-color: #F9F6E7}
+.useroption {margin: -153px auto 0; text-align: center; min-height: 100%; height: 900px;  background-color: #F9F6E7}
 .useroptiona {display: inline-block; padding-top: 200px; padding-left: 10px; padding-right: 10px; }  
 .useroptionb {padding-left: 30px; padding-right: 30px; background: rgba(255,255,255,0.8);  border-radius: 12px; 
   -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
+  -webkit-border-radius: 12px; 
   -o-border-radius: 12px; height: 100%; min-width: 350px;  padding-bottom: 20px;}  
 
 
@@ -39,14 +39,14 @@
 .pTa input { width: 275px; height: 45px; border: 1px solid #D4D5D4} 
 
  
-.nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
-.nameac {background-color: #E6CF99;  width: 120px; float: left; color: #4B271A;}
-.pTd input { width: 245px; height: 45px; border: 1px solid #D4D5D4} 
+.nameacw label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameacw {background-color: #E6CF99;  width: 120px; float: left; color: #4B271A;}
+.pTd input { width: 232px; height: 45px; border: 1px solid #D4D5D4} 
  
 
 .nameas label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .nameas {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
-.pTee input { width: 131px; height: 45px; border: 1px solid #D4D5D4} 
+.pTee input { width: 34.5%; height: 45px; border: 1px solid #D4D5D4} 
 
 .payTypea {text-align:left;  width: 380px; height: 320px;} 
 .pTe input {width: 25%;}
@@ -75,20 +75,64 @@
 .nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .nameac {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
 .nameaca { width: 80%; height: 45px; border: 1px solid #D4D5D4} 
+.nameaca input[type=radio] {
+    display:inline-block;
+    margin:-2px;
+    padding: 4px 12px;
+    background-color: #e7e7e7;
+    border-color: #ddd;
+}
 .pad {width: 100%; height: 45px;}
  
  
 .nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .nameac {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
-.paee input { width: 65%; height: 45px; border: 1px solid #D4D5D4} 
+.paee input { width: 71%; height: 45px; border: 1px solid #D4D5D4} 
  
-.nameas label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
-.nameas {background-color: #E6CF99;  width: 37%; float: left; color: #4B271A;}
+.nameass label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameass {background-color: #E6CF99;  width: 37%; float: left; color: #4B271A;}
 .paeee input { width: 63%; height: 45px; border: 1px solid #D4D5D4} 
 
 
 .payTypeb {text-align:left;  width: 100%; height: 420px;}  
+.abcq {text-align:  center;}
+ 
+ 
+ 
+ 
+ 
+.pTq {margin-top: 10px;}  
+.pqq {margin-top: 10px; }  
+.pqqa {margin-top: 10px;}  
+ 
+.nameq label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameq {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
+#pTqa input { width: 275px; height: 45px; border: 1px solid #D4D5D4} 
 
+ 
+.namqq label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.namqq {background-color: #E6CF99;  width: 367px; float: left; color: #4B271A; margin-top: 10px;}
+.pqqaa input { width: 32px; height: 45px; border: 1px solid #D4D5D4;  } 
+
+.namqqa label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px; }  
+.namqqa {background-color: #E6CF99;  width: 120px; float: left; color: #4B271A; margin-bottom: 10px; }
+.pqqa input { width: 247px; height: 45px; border: 1px solid #D4D5D4;  margin-bottom: 10px; } 
+
+.payTypez {text-align:left;  width: 380px; height: 100%;} 
+.abcz {text-align: center;}
+
+#selectBox {width: 72.5%;
+   background: transparent;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   padding-top:13px;
+   border: 1px solid #D4D5D4;
+   border-radius: 0;
+   height: 45px;
+   text-align:center;
+   -webkit-appearance: none;
+   }
  
  
  
@@ -134,24 +178,27 @@
 
 .name label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .name {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
-.pTa input { width: 175px; height: 45px; border: 1px solid #D4D5D4} 
+.pTa input { width: 64.6%; height: 45px; border: 1px solid #D4D5D4} 
 
  
 .nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .nameac {background-color: #E6CF99;  width: 120px; float: left; color: #4B271A;}
-.pTd input { width: 145px; height: 45px; border: 1px solid #D4D5D4} 
- 
+.pTd input { width: 54%; height: 45px; border: 1px solid #D4D5D4} 
+
 
 .nameas label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
-.nameas {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
-.pTee input { width: 81px; height: 45px; border: 1px solid #D4D5D4} 
+.nameas {background-color: #E6CF99;  width: 34%; float: left; color: #4B271A;}
+.pTee input { width: 29.3%; height: 45px; border: 1px solid #D4D5D4} 
 	
 .payTypea {text-align:left; width: 95%; height: 310px;} 
 
  
  
  
+ .payTypeb {height: 100%;}
  
+ 
+
  
  
 .nvme label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
@@ -159,27 +206,66 @@
 .paa input { width: 70%; height: 45px; border: 1px solid #D4D5D4} 
 
 .nvmee label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
-.nvmee {background-color: #E6CF99;  width: 31%; float: left; color: #4B271A;}
-.paae input { width: 32.3%; height: 45px; border: 1px solid #D4D5D4} 
+.nvmee {background-color: #E6CF99;  width: 26%; float: left; color: #4B271A; min-width: 105px;}
+.paae input { width: 30.3%; height: 45px; border: 1px solid #D4D5D4} 
 
 
-.nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
-.nameac {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
-.nameaca { width: 80%; height: 45px; border: 1px solid #D4D5D4} 
+.nameacw label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameacw {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
+.nameaca { width: 80%; height: 45px; border: 1px solid #D4D5D4;   } 
 .pad {width: 100%; height: 45px;}
  
  
-.nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
-.nameac {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
-.paee input { width: 65%; height: 45px; border: 1px solid #D4D5D4} 
+.nameacw label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameacw {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A; }
+.paee input { width: 65%; height: 45px; border: 1px solid #D4D5D4}
+.paee {width: 100%; height: 45px;} 
  
-.nameas label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
-.nameas {background-color: #E6CF99;  width: 47%; float: left; color: #4B271A;}
-.paeee input { width: 53%; height: 45px; border: 1px solid #D4D5D4} 
+.nameass label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameass {background-color: #E6CF99;  width: 45%; float: left; color: #4B271A;}
+.paeee input { width: 55%; height: 45px; border: 1px solid #D4D5D4} 
 
 
 .payTypeb {text-align:left;  width: 100%; height: 420px;}  
  
+ 
+ 
+ 
+ 
+ 
+ 
+.pTq {margin-top: 10px;}  
+.pqq {margin-top: 10px; }  
+.pqqa {margin-top: 10px;}  
+ 
+.nameq label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameq {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
+.pTq input { width: 70%; height: 45px; border: 1px solid #D4D5D4} 
+
+ 
+.namqq label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.namqq {background-color: #E6CF99;  width: 99%; float: left; color: #4B271A; margin-top: 10px;}
+.pqqaa input { width: 32px; height: 45px; border: 1px solid #D4D5D4;  } 
+
+.namqqa label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px; }  
+.namqqa {background-color: #E6CF99;  width: 120px; float: left; color: #4B271A; margin-bottom: 10px; }
+.pqqa input { width: 59.5%; height: 45px; border: 1px solid #D4D5D4;  margin-bottom: 10px; } 
+
+.payTypez {text-align:left;  width: 100%; height: 100%;} 
+.abcz {text-align: center;}
+
+#selectBox {width: 70%;
+   background: transparent;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   padding-top:13px;
+   border: 1px solid #D4D5D4;
+   border-radius: 0;
+   height: 45px;
+   text-align:center;
+   -webkit-appearance: none;
+   }
  
  
 	
