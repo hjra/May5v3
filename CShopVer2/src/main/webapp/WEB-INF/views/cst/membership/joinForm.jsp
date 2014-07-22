@@ -2,11 +2,11 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link href="/CShop/resources/css/membership.css" rel="stylesheet">
+<link href="/CShop/resources/css/membership2.css" rel="stylesheet">
 
-회원가입 입력폼
-<br>
+
 <f:form action="joinOk.do" method="Post" commandName="customer" onkeypress="return event.keyCode!=13">
+	회원가입
 	<div class="row_group">
 		<div id="idDiv">
 			<f:input path="cstId" placeholder="USER ID" id="cstId" />
@@ -53,13 +53,6 @@
 				<div id="zipInfoDiv" style="width: 100%; height: 100px; overflow: auto; display: none;">
 					<table id="zipInfoTable"></table>
 				</div>
-			<%-- </form> --%>
-			<%-- <f:input path="zipCode" placeholder="ADDRESS"/> --%>
-			<%-- 			<f:select path="zipCode">
-				<c:forEach var="zip" items="${zip}">
-					<option value="${zip.zipCode}">${zip.sido}&nbsp;${zip.sigungu}</option>
-				</c:forEach>
-			</f:select> --%>
 		</div>
 		<div id="add2Div">
 			<f:input path="cstDetailAddress" placeholder="ADDRESS DETAIL" />
