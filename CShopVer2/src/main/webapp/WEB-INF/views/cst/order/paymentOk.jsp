@@ -32,22 +32,21 @@
         ImageIO.write(qrImage, "PNG", new File(path, savedFileName+".png"));  
     }  
 %>  
-
+<link href="/CShop/resources/css/paymentok.css" rel="stylesheet">
 
 <div class="useroption">
 <div class="useroptiona">
 <div class="useroptionb">
 <div class="optiona">ADVANCE ORDER</div>
 			<div class="abn"></div>
-			<div class="aba"></div>  
-			<div class="abs">*는 필수입력 항목입니다</div>
-			<div class="abc">완료</div>
-<h1>결제완료</h1>
+ 
+			<div class="abs">결제완료</div>
+			<div class="abc"></div>
 
 <f:form action="homeImage.do" method="post">
 <fieldset>
-<div>
-	<span class=""><label for="">결제수단</label></span>
+<div class="odName">
+	<span class="name"><label for="">결제수단</label></span>
 	<span>
 		<c:forEach var="payKind" items="${payKind }">
 			<c:if test="${payKind.payCode == orders.payCode }">
@@ -56,12 +55,12 @@
 		</c:forEach>
 	</span>
 </div>
-<div>
-	<span class=""><label for="">상품명</label></span>
+<div class="odName">
+	<span class="name"><label for="">상품명</label></span>
 	<span><input type="text" name="itemId" value="${orders.itemName }"></span>
 </div>
-<div>
-	<span class=""><label for="">추가옵션</label></span>
+<div class="odName">
+	<span class="name"><label for="">추가옵션</label></span>
 	<span>
 		<c:forEach var="optionPrice" items="${optionPrice }">
 			<c:if test="${optionPrice.optionCode == orders.optionCode }">
@@ -98,8 +97,8 @@
 	<span><input type="text" value="${orders.dlvwarn }"/></span>
 </c:when>
 </c:choose>
-<div>
-	<span class=""><label for="">총 결제금액</label></span>
+<div class="odCp">
+	<span class="nameaa"><label for="">총 결제금액</label></span>
 	<span><input type="text" name="totalPrice" value="${orders.totalPrice }"></span>
 </div>
 <c:choose>
@@ -138,10 +137,8 @@
 <c:otherwise>
 </c:otherwise>
 </c:choose>
-
-<br> 
-	<input type="submit" value="주문결제완료">
-	결제 시스템은 돈 주고 사서 쓰세요..
+	<input type="submit" value="주문결제완료" class="ased" style="font-weight:bold" >
+	
 </fieldset>
 </f:form>
 </div>
