@@ -149,6 +149,7 @@
 		<input type="hidden" value="${orders.optionCode }" name="optionCode">
 		<input type="hidden" value="${orders.cardMessage }" name="cardMessage">
 		<input type="hidden" value="${orders.itemId }" name="itemId">
+		<input type="hidden" value="${orders.url }" name="url">
 </f:form>
 
 </div>

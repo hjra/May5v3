@@ -18,7 +18,7 @@
     }  
     else {  
         // 파일 설정  
-        File path = new File(application.getRealPath("/") + "resources/qrcodeimages/");  
+        File path = new File(application.getRealPath("/") + "resources/img/");  
         savedFileName = UUID.randomUUID().toString().replace("-", "");  
         if (!path.exists()) path.mkdirs();  
           

@@ -44,9 +44,7 @@
 					<c:if test="${itemId.itemId == orders.itemId }">
 						<c:forEach var="optionPrice" items="${optionPrice }">
 							<c:if test="${optionPrice.optionCode == orders.optionCode }">
-								<input type="text" value="${itemId.price*orders.orderAmount + 
-
-optionPrice.optionPrice }" name="totalPrice">
+								<input type="text" value="${itemId.price*orders.orderAmount + optionPrice.optionPrice }" name="totalPrice">
 							</c:if>
 						</c:forEach>
 					</c:if>
