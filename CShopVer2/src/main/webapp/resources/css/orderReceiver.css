@@ -1,4 +1,4 @@
-.useroption {margin: -95px auto 0; text-align: center; min-height: 100%; height: 100%;  background-color: #F9F6E7; }
+.useroption {margin: -155px auto 0; text-align: center; min-height: 100%; height: 100%;  background-color: #F9F6E7; padding-bottom: 130px;}
 .useroptiona {display: inline-block; padding-top: 200px; padding-left: 10px; padding-right: 10px;  padding-bottom: 10px;}  
 .useroptionb {padding-left: 30px; padding-right: 30px; background: rgba(255,255,255,0.8);  border-radius: 12px; 
   -moz-border-radius: 12px;
@@ -17,14 +17,20 @@
   
   
 .odName {margin-top: 10px;}  
-.odCp {margin-top: 10px;}  
+.odCp {margin-top: 10px;}   
 .odEmail {margin-top: 10px;}  
+.odAddress {margin-top: 10px;}  
+.odDetailAddress {margin-top: 10px;}  
+.aasfi {margin-top: 10px;} 
+.odDlvWarn {margin-top: 10px;} 
+ 
 
-   
+ 
+
 .name label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .name {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
 .odName input { width: 235px; height: 45px; border: 1px solid #D4D5D4} 
-
+.namee input {width: 235px; height: 45px; border: 1px solid #D4D5D4}  
 
 .nameaa label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .nameaa {background-color: #E6CF99;  width: 130px; float: left; color: #4B271A;}
@@ -35,8 +41,22 @@
 .nameab {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
 .odEmail input { width: 235px; height: 45px; border: 1px solid #D4D5D4} 
 
- 
- 
+.addressa label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.addressa {background-color: #E6CF99;  width: 68px; float: left; color: #4B271A;}
+.addressa input { width: 195px; height: 45px; border: 1px solid #D4D5D4} 
+.addressaa input { width: 182px; height: 45px; border: 1px solid #D4D5D4; float: left;} 
+.addressaaa input { width: 75px; height: 45px; border: 1px solid #D4D5D4; } 
+.odAaa label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.odAaa {background-color: #E6CF99;  width: 102px; float: left; color: #4B271A;}
+#orderDetailAddress { width: 223px; height: 45px; border: 1px solid #D4D5D4; } 
+
+
+.odDlvWarnaa label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.odDlvWarnaa {background-color: #E6CF99;  width: 139px; float: left; color: #4B271A;}
+.odDlvWarn input { width: 186px; height: 45px; border: 1px solid #D4D5D4}   
+.adf {padding-top: 2%;}
+
+
 .asdfd {padding-top: 15px; }   
 .dfdfg {width: 100%; min-width: 333px;}
 .ased {background: #B08A50; border: 1px solid #B08A50; width: 150px; height: 40px; color: #FFFFFF;  border-radius: 3px;
@@ -64,6 +84,60 @@
  
 @media only screen and (max-width: 768px){
 	
+	
+	
+	
+
+.odName {margin-top: 10px;}  
+.odCp {margin-top: 10px;}   
+.odEmail {margin-top: 10px;}  
+.odAddress {margin-top: 10px;}  
+.odDetailAddress {margin-top: 10px;}  
+.aasfi {margin-top: 10px;} 
+.odDlvWarn {margin-top: 10px;} 
+ 
+
+ 
+
+.name label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.name {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
+.odName input { width: 235px; height: 45px; border: 1px solid #D4D5D4} 
+.namee input {width: 235px; height: 45px; border: 1px solid #D4D5D4}  
+
+.nameaa label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameaa {background-color: #E6CF99;  width: 130px; float: left; color: #4B271A;}
+.odCp input { width: 195px; height: 45px; border: 1px solid #D4D5D4}   
+
+
+.nameab label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.nameab {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
+.odEmail input { width: 235px; height: 45px; border: 1px solid #D4D5D4} 
+
+.addressa label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.addressa {background-color: #E6CF99;  width: 68px; float: left; color: #4B271A;}
+.addressa input { width: 195px; height: 45px; border: 1px solid #D4D5D4} 
+.addressaa input { width: 152px; height: 45px; border: 1px solid #D4D5D4; float: left;} 
+.addressaaa input { width: 75px; height: 45px; border: 1px solid #D4D5D4; } 
+.odAaa label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.odAaa {background-color: #E6CF99;  width: 102px; float: left; color: #4B271A;}
+#orderDetailAddress { width: 193px; height: 45px; border: 1px solid #D4D5D4; } 
+
+
+.odDlvWarnaa label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
+.odDlvWarnaa {background-color: #E6CF99;  width: 139px; float: left; color: #4B271A; margin-left: 10px}
+.odDlvWarn input { width: 158px; height: 45px; border: 1px solid #D4D5D4; margin-left: -12px}   
+.adf {padding-top: 2%;}	
+	
+#dy {width: 295px; margin-left: 10px}
+	 
+	
+	
+	
+	
+	
+	
+	
+	
 #dn { height: 160px; width: 295px; margin-left: 10px}  
  
 .name label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
@@ -80,14 +154,14 @@
 .nameab {background-color: #E6CF99;  width: 90px; float: left; color: #4B271A;}
 .odEmail input { width: 205px; height: 45px; border: 1px solid #D4D5D4} 
 	
-	
 	 
-.useroption {margin: 0 auto; text-align: center; min-height: 100%; height: 700px;  background-color: #F9F6E7;  min-width: 330px;}
-.useroptiona {display: inline-block; padding-top: 90px; padding-left: 10px; padding-right: 10px; }  
+	 
+.useroption {margin: -55px auto 0; text-align: center; min-height: 100%; height: 700px;  background-color: #F9F6E7;  min-width: 330px; padding-bottom: 30px;}
+.useroptiona {display: inline-block; padding-top: 62px; padding-left: 10px; padding-right: 10px;  }  
 .useroptionb {padding-left: 15px; padding-right: 10px; background: rgba(255,255,255,0.8);  border-radius: 12px;  
   -moz-border-radius: 12px;  
   -webkit-border-radius: 12px;
-  -o-border-radius: 12px; height: 500px; min-width: 340px; }
+  -o-border-radius: 12px; height: 100%; min-width: 340px; }
 
 
 .optiona { font-size: 20px; font-weight: bold; color: #B08A50; padding-top: 35px; } 

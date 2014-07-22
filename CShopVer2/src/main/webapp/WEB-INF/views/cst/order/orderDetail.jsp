@@ -45,10 +45,10 @@
 					<tr>
 						<th scope="row"><label for="url">URL입력</label></th>
 						<td>
-							<input type="text" name="url" value="" placeholder="ex)http://www.naver.com/" style="width: 500px" maxlength="200"/>
+							<input type="text" name="url" value="" placeholder="ex)http://www.naver.com/" style="width: 100%" maxlength="200"/>
 						</td>
 					</tr>
-				</tbody>
+				</tbody> 
 			</table>
 			<div class="asdfd">
 				<input type="reset" value="재 입 력" class="ased" style="font-weight:bold" />
