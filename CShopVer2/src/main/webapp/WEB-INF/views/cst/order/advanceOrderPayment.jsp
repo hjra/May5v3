@@ -16,14 +16,15 @@
 	<h1></h1>
 	<f:form method="post" action="payment.do" commandName="orders">
 	<fieldset>
+	
 	<!-- html 시작 -->
 	일반결제 :
 	<c:forEach var="payKinds" items="${payKind }" >
-		<input type="radio" name="payType" value="${payKinds.payType }" 
-			onclick="div_OnOff(this.value,'${payKinds.payType }');">${payKinds.payType }
+		<input type="radio" name="payCode" value="${payKinds.payCode }" 
+			onclick="div_OnOff(this.value,'${payKinds.payCode }');">${payKinds.payType }
 				
 	</c:forEach>
-	<div id="신용카드" style="display: block">
+	<div id="1" style="display: block">
 		카드구분 : 
 		<c:forEach var="cardSections" items="${cardSection }" >
 			<input type="radio" name="cardSectionType" value="${cardSections.cardSectionType }" 
@@ -68,7 +69,7 @@
 							<input name="payAgreement1" type="checkbox" id="agreement1">위 상품의 판매정보를 명확히 확인하였으며 구매진행에 동의합니다
 		</div>
 	</div>
-	<div id="계좌이체" style="display: none">
+	<div id="2" style="display: none">
 		
 		현금영수증 :
 		<c:forEach var="cashReceiptRequestInfoSaves" items="${cashReceiptRequestInfoSave }">
@@ -140,7 +141,7 @@
 							<input name="payAgreement2" type="checkbox" id="agreement2">위 상품의 판매정보를 명확히 확인하였으며 구매진행에 동의합니다
 	</div>
 		
-	<div id="휴대폰 소액결제" style="display: none">
+	<div id="3" style="display: none">
 		휴대폰 결제안내 : 휴대폰 결제는 통신사에 따라 결제 한도 금액이 다릅니다.<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		휴대폰 결제의 경우 가입하신 이동통신사에서 증빙을 발급 받을 수 있습니다.<br>
@@ -149,17 +150,15 @@
 							<input name="privacyAgreement3" type="checkbox" id="agreement3">개인정보 제3자 제공 동의하기<br>
 							<input name="payAgreement3" type="checkbox" id="agreement3">위 상품의 판매정보를 명확히 확인하였으며 구매진행에 동의합니다
 	</div>
-<<<<<<< HEAD
-=======
 		<input type="hidden" value="${orders.itemId }" name="itemId">
->>>>>>> branch 'master' of https://github.com/hjra/may5.git
 		<input type="hidden" value="${orders.orderAmount }" name="orderAmount">
-		<input type="hidden" value="${orders.optionType }" name="optionType">
+		<input type="hidden" value="${orders.optionCode }" name="optionCode">
 		<input type="hidden" value="${orders.cardMessage }" name="cardMessage">
 		<input type="hidden" value="${orders.receiverName }" name="receiverName">
 		<input type="hidden" value="${orders.receiverCP }" name="receiverCP">
 		<input type="hidden" value="${orders.receiverEmail }" name="receiverEmail">
 		<input type="hidden" value="${orders.orderDetailAddress }" name="orderDetailAddress">
+		<input type="hidden" value="${orders.dlvinfoyn }" name="dlvinfoyn">
 		<input type="hidden" value="${orders.dlvwarn }" name="dlvwarn">
 		<p>
 			<input type="reset" value="재입력" class="ased" style="font-weight:bold"/>
@@ -168,11 +167,8 @@
 		</p>
 	</fieldset>
 	</f:form>
-<<<<<<< HEAD
-=======
 
 
->>>>>>> branch 'master' of https://github.com/hjra/may5.git
 </div> 
 </div>
 </div>

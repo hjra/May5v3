@@ -74,18 +74,18 @@ $(document).ready(function(){
 
 // 일반결제
 function div_OnOff(v, id) {
-	if (v == "신용카드") { // 신용카드
-		document.getElementById("계좌이체").style.display = "none"; // 숨김
-		document.getElementById("휴대폰 소액결제").style.display = "none"; // 숨김
-		document.getElementById("신용카드").style.display = ""; // 보여줌
-	} else if (v == "계좌이체") { // 계좌이체
-		document.getElementById("신용카드").style.display = "none"; // 숨김
-		document.getElementById("휴대폰 소액결제").style.display = "none"; // 숨김
-		document.getElementById("계좌이체").style.display = ""; // 보여줌
+	if (v == "1") { // 신용카드
+		document.getElementById("2").style.display = "none"; // 숨김
+		document.getElementById("3").style.display = "none"; // 숨김
+		document.getElementById("1").style.display = ""; // 보여줌
+	} else if (v == "2") { // 계좌이체
+		document.getElementById("1").style.display = "none"; // 숨김
+		document.getElementById("3").style.display = "none"; // 숨김
+		document.getElementById("2").style.display = ""; // 보여줌
 	} else { // 휴대폰 소액결제
-		document.getElementById("신용카드").style.display = "none"; // 숨김
-		document.getElementById("계좌이체").style.display = "none"; // 숨김
-		document.getElementById("휴대폰 소액결제").style.display = ""; // 보여줌
+		document.getElementById("1").style.display = "none"; // 숨김
+		document.getElementById("2").style.display = "none"; // 숨김
+		document.getElementById("3").style.display = ""; // 보여줌
 	}
 }
 

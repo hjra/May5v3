@@ -61,6 +61,11 @@
 		select * from optionPrice
 	</select>
 	
+	<!-- 아이템 이름 -->
+	<select id="getItemList" resultType="Orders">
+		select * from item
+	</select>
+	
 	
 	
 	

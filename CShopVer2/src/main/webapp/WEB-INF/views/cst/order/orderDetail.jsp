@@ -22,7 +22,7 @@
 				</colgroup>
 				<tbody> 
 					<tr>
-						<th scope="row"><label for="orderAmount">*케이크 수량</label></th>
+						<th scope="row"><label for="orderAmount">케이크 수량</label></th>
 						<td>
 							<input type="number" min="1" max="10" step="1"  name="orderAmount" required="required"  class="dfds">
 						</td>
@@ -31,7 +31,7 @@
 						<th scope="row"><label for=""><strong>*</strong>옵션선택</label></th>
 						<td>
 							<c:forEach var="optionChoose" items="${optionPrice }" end="5">
-								<input type="radio" value="${optionChoose.optionType }" name="optionType" required="required">
+								<input type="radio" value="${optionChoose.optionCode }" name="optionCode" required="required">
 									${optionChoose.optionType } ${optionChoose.optionPrice }원<br>
 							</c:forEach>
 						</td>

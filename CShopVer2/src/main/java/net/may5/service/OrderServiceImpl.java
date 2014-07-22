@@ -7,6 +7,7 @@ import java.util.Map;
 import net.may5.dao.OrderMapper;
 import net.may5.dto.Customer;
 import net.may5.dto.Orders;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -96,6 +97,11 @@ public class OrderServiceImpl implements OrderService {
 		return orderMapper.getTelecom();
 	}
 	
+	@Override
+	public List<Orders> getItemList() {
+		
+		return orderMapper.getItemList();
+	}
 
 	/*@Override
 	public OptionPrice getOptionCard() {
@@ -177,6 +183,7 @@ public class OrderServiceImpl implements OrderService {
 		return orderMapper.getPriceList();
 	}
 
+	
 	
 	
 

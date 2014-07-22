@@ -36,6 +36,10 @@ public interface OrderService {
 	public List<Orders> getOptionPrice();
 	
 	public List<Orders> getTelecom();
+	
+	public List<Orders> getItemList();
+	
+
 
 	/*알리미*/
 	public List<Orders> getLevelCodeSearch(String levelCode); // levelCode로 조회하기

@@ -52,6 +52,7 @@ public class OrderController {
 	public String orderReceiverInfo( Model model, Orders orders, String cstId ){
 		model.addAttribute("orders", orders);
 		System.err.println("orders에서 담겨넘어온 내용 : "+orders);
+		model.addAttribute("optionPrice", orderService.getOptionPrice());
 		model.addAttribute("cstExistingInfo",orderService.getCstExistingInfo(cstId));
 		return "cst/order/orderReceiverInfo";
 	}
@@ -86,7 +87,7 @@ public class OrderController {
 		model.addAttribute("payKind", orderService.getPayKind());
 		model.addAttribute("cardSection", orderService.getCardSection());
 		model.addAttribute("cashReceiptRequestInfoSave", orderService.getCashReceiptRequestInfoSave());
-		
+		model.addAttribute("optionPrice", orderService.getOptionPrice());
 		model.addAttribute("deduction", orderService.getDeduction());
 		model.addAttribute("cardKind",orderService.getCardKind());
 		model.addAttribute("installment", orderService.getInstallment());
@@ -125,6 +126,10 @@ public class OrderController {
 		
 		model.addAttribute("telecoms", orderService.getTelecom());
 		
+		model.addAttribute("itemId", orderService.getItemList());
+		
+		model.addAttribute("optionPrice", orderService.getOptionPrice());
+		
 		return "cst/order/payment";
 	}
 	
@@ -155,6 +160,10 @@ public class OrderController {
 		model.addAttribute("dlvwarn", dlvwarn);
 		
 		model.addAttribute("telecoms", orderService.getTelecom());
+		
+		model.addAttribute("itemId", orderService.getItemList());
+		
+		model.addAttribute("optionPrice", orderService.getOptionPrice());
 		
 		return "cst/order/paymentOk";
 	}

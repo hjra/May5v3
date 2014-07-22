@@ -20,8 +20,8 @@
 		<div class="odDlvInfoYn">
 			<span><label for="dlvinfoyn"><strong>*</strong>배송 여부</label></span>
 			<span>
-				<input type="radio" value="dn" name="receive1" onclick="div_OnOff5(this.value,'dn');" checked="checked"/>직접수령
-				<input type="radio" value="dy" name="receive1" onclick="div_OnOff5(this.value,'dy');"/>배송(2500원)
+				<input type="radio" value="dn" name="dlvinfoyn" onclick="div_OnOff5(this.value,'dn');" checked="checked"/>직접수령
+				<input type="radio" value="dy" name="dlvinfoyn" onclick="div_OnOff5(this.value,'dy');"/>배송(2500원)
 			</span>
 		</div>
 	</div>
@@ -51,13 +51,13 @@
 	<div class="od">
 		<div class="odCp">
 			<span><label for="receiverCP"><strong>*</strong>휴대전화번호</label></span>
-			<span><input type="tel" id="receiverCP" placeholder="ex)01098765432" value="${cstExistingInfo.cstCP}"/></span>
+			<span><input type="tel" id="receiverCP" name="receiverCP" placeholder="ex)01098765432" value="${cstExistingInfo.cstCP}"/></span>
 		</div>
 	</div>
 	<div class="od">
 		<div class="odEmail">
-			<span><label for="email">이메일</label></span>
-			<span><input type="email" id="email" placeholder="ex)id@domain.com" value="${cstExistingInfo.cstEmail}"/></span>
+			<span><label for="receiverEmail">이메일</label></span>
+			<span><input type="email" id="receiverEmail" name="receiverEmail" placeholder="ex)id@domain.com" value="${cstExistingInfo.cstEmail}"/></span>
 		</div>
 	</div>
 	
@@ -130,13 +130,13 @@
 	<div class="od">
 		<div class="odCp"> 
 			<span class="nameaa"><label for="receiverCP">*휴대전화번호</label></span>
-			<span><input type="tel" id="receiverCP" placeholder="ex)01098765432"  value="${cstExistingInfo.cstCP}"/></span>
+			<span><input type="tel" id="receiverCP" name="receiverCP" placeholder="ex)01098765432"  value="${cstExistingInfo.cstCP}"/></span>
 		</div>
 	</div>
 	<div class="od">
 		<div class="odEmail">
-			<span class="nameab"><label for="email">이메일</label></span>
-			<span><input type="email" id="email" placeholder="ex)id@domain.com" value="${cstExistingInfo.cstEmail}"/></span>
+			<span class="nameab"><label for="receiverEmail">이메일</label></span>
+			<span><input type="email" id="receiverEmail" name="receiverEmail" placeholder="ex)id@domain.com" value="${cstExistingInfo.cstEmail}"/></span>
 		</div>
 	</div>  
 	</div>
@@ -146,7 +146,7 @@
 			<input type="submit" value="다음" class="aseda" style="font-weight:bold"/>
 	</div>
 		<input type="hidden" value="${orders.orderAmount }" name="orderAmount">
-		<input type="hidden" value="${orders.optionType }" name="optionType">
+		<input type="hidden" value="${orders.optionCode }" name="optionCode">
 		<input type="hidden" value="${orders.cardMessage }" name="cardMessage">
 		<input type="hidden" value="${orders.itemId }" name="itemId">
 </f:form>
