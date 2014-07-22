@@ -1,5 +1,5 @@
 .content { margin: 0; }
-.home { background-color: #FEFCF0; height: 900px;   text-align: center; transition: 0.7s; }
+.home { background-color: #FEFCF0; height: 900px;   text-align: center; transition: 0.7s; margin: -95px auto 0;  }
 .home:hover { background-color: #FEFCF0; height: 1000px;   text-align: center;  transition: 0.7s;}
 
 

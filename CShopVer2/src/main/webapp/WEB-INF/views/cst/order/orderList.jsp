@@ -71,7 +71,7 @@
 					<article class="orderartcle">		
 						<div class="as">
 						<a href="http://localhost:8080/CShop/orderList.do" title="Close" class="close">X</a>
-						<div class="image">${orders.noticeImg}</div>
+						<div class="image"><img src="/CShop/resources/img/cake/${orders.itemId}1.png" alt="이미지" style="width:230px;" ></div>
 						<div class="Commenta">${orders.noticeComment}</div>
 						<div class="dtinformation">
 							<div class="alla">
