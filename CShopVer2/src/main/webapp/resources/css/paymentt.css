@@ -65,7 +65,12 @@
  
 .nvme label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .nvme {background-color: #E6CF99;  width: 30%; float: left; color: #4B271A;}
-.nvmea { width: 100%; height: 45px;}
+.nvmea {border: 1px solid #d4d5d4;
+    font-size: 13px;
+    height: 45px;
+    margin-left: 30%;
+    padding-top: 12px;
+    text-align: left;}
 .paa input { width: 70%; height: 45px; border: 1px solid #D4D5D4} 
 
 .nvmee label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
@@ -75,20 +80,26 @@
 
 .nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .nameac {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
-.nameaca { width: 80%; height: 45px; border: 1px solid #D4D5D4} 
+.nameaca { 
+    font-size: 13px;
+    height: 45px;
+    text-align: center;} 
 .nameaca input[type=radio] {
     display:inline-block;
-    margin:-2px;
+    margin:15px 7px 7px;
     padding: 4px 12px;
     background-color: #e7e7e7;
     border-color: #ddd;
 }
-.pad {width: 100%; height: 45px;}
+.pad {border: 1px solid #d4d5d4; 
+    font-size: 13px;
+    height: 45px;
+    text-align: center; }
  
  
 .nameac label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .nameac {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
-.paee input { width: 71%; height: 45px; border: 1px solid #D4D5D4} 
+.paee input { width: 70.5%; height: 45px; border: 1px solid #D4D5D4} 
  
 .nameass label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .nameass {background-color: #E6CF99;  width: 37%; float: left; color: #4B271A;}
@@ -213,10 +224,12 @@
 
 .nameacw label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .nameacw {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A;}
-.nameaca { width: 80%; height: 45px; border: 1px solid #D4D5D4;   } 
-.pad {width: 100%; height: 45px;}
+.nameaca { height: 45px;
+    margin-left: -35px;  } 
+.nameaca input {padding-left: 2px;} 
+.pad {width: 100%; height: 45px;} 
  
- 
+  
 .nameacw label { width: 100%; height: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}  
 .nameacw {background-color: #E6CF99;  width: 35%; float: left; color: #4B271A; }
 .paee input { width: 65%; height: 45px; border: 1px solid #D4D5D4}
