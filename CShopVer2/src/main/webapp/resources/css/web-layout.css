@@ -13,8 +13,8 @@ body, html { margin: 0; padding: 0; }
 #master-header menu#gnb > li { color: #775542; position: relative; display: inline-block; zoom: 1; *display: inline; width: 70px; font-size: 14px; }
 #master-header menu#gnb > li div.submenu { position: absolute; display: none; left: -40px; width: 150px; }
 #master-header menu#gnb > li div.submenu menu { width: 100%; padding: 10px; background: #FAF8EB; border-right: 2px solid #e6dac3; border-bottom: 2px solid #e6dac3; }
-#master-header menu#gnb > li div.submenu menu li { text-align: left; font-size: 12px; padding-left: 10px; color: #775542; height: 30px; line-height: 30px; border-bottom: 1px solid #fdf6f0; }
-#master-header menu#gnb > li div.submenu menu li:first-child { border-top: 1px solid #fdf6f0; }
+#master-header menu#gnb > li div.submenu menu li { text-align: left; font-size: 12px; padding-left: 10px; color: #775542; height: 30px; line-height: 30px; border-bottom: 1px solid #ffffff; } 
+#master-header menu#gnb > li div.submenu menu li:first-child { border-top: 1px solid #ffffff; }
 #master-header menu#gnb > li div.submenu menu li:hover { background: #E5D69B; }
 #master-header menu#gnb > li:hover div.submenu { display: block; }
 #master-header menu#gnb > li#desktop-logo { font-size: 25px; }
