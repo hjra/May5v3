@@ -2,7 +2,6 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
 <%@ page session="true"%>
-<html>
 <head>
 
 <SCRIPT language="javascript">
@@ -44,4 +43,9 @@
 		</FORM>
 		</center>
 </body>
-</html>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>

@@ -110,7 +110,7 @@
 	 webkit-box-shadow: 2px 2px 5px #c9c9c9;
 	 box-shadow: 2px 2px 5px #c9c9c9;
 	 
-}		
+	}		
 	
 	
 	.title  { height: 42px}
@@ -181,7 +181,7 @@
           
             
             
-<!--게시판 페이징 영역 -->
+	<!--게시판 페이징 영역 -->
             <li>
                 <div id="divPaging">
                     <div>◀</div>
