@@ -271,55 +271,56 @@
 	}
 	
 	
-</style>
+	</style>
 
 
 	
 	<!-- 전화걸기 스크립트 없으면 모바일에서 전화,문자보내기가 연동이 안됩니다.	 -->
-<script type="text/javascript"> 
-function callNumber(num){
-   location.href="tel:"+num;
-}
-</script>
+	<script type="text/javascript"> 
+	function callNumber(num){
+    location.href="tel:"+num;
+	}
+	</script>
 
 
 
-<center>
+	<center>
 
-
-<h1>C# ABOUT</h1>
-
-</center>
+		<h1>C# ABOUT</h1>
+	</center>
+	
 <br></br>
 <br></br>
-<center>
-<img src="/CShop/resources/img/about/main5.png">
-</center>
+	<center>
+		<img src="/CShop/resources/img/about/main5.png">
+	</center>
 <br></br>
+
 <left>
-<font face="궁서체" size="3">
-C#에 오신걸 환영합니다.<br>
-<br>
-C#은 남녀노소 모두가 좋아하는 생크림케익 전문점입니다.<br>
-저희는 고객을 위해 100가지 넘는 다양한 케익을 준비되어 있습니다.<br>
-홍대거리에서 1호점이 개점하여 많은 고객들에게 인정 받고 여기에서 멈취지 않고<br>
-고객들에게 더 가까이 가기위하여 이번에는 온라인 C#을 오픈하였습니다.<br>
-<br>
-C#은 모든 케익은 숙련된 제빵사가 주문 즉시 최상의 재료들로 직접 만듭니다.<br>
-주문자가 3가지 아이템을 조합하여 케익의 크기, 크림, 토핑의 종류를 선택할 수 있습니다.<br>
-감각적이고 품격있는 선물을 원하시는 분들 또한 C#은 최고의 선택입니다.<br>
-<br>
-C# 고유의 디자인으로 만들어진 케익과 차별화된 맛 그리고 프리미엄 꽃배달을 지금 체험해보세요.<br>
-</font>
+	<font face="궁서체" size="3">
+		C#에 오신걸 환영합니다.
+	<br>
+	<br>
+		C#은 남녀노소 모두가 좋아하는 생크림케익 전문점입니다.<br>
+		저희는 고객을 위해 100가지 넘는 다양한 케익을 준비되어 있습니다.<br>
+		홍대거리에서 1호점이 개점하여 많은 고객들에게 인정 받고 여기에서 멈취지 않고<br>
+		고객들에게 더 가까이 가기위하여 이번에는 온라인 C#을 오픈하였습니다.<br>
+		<br>
+		C#은 모든 케익은 숙련된 제빵사가 주문 즉시 최상의 재료들로 직접 만듭니다.<br>
+		주문자가 3가지 아이템을 조합하여 케익의 크기, 크림, 토핑의 종류를 선택할 수 있습니다.<br>
+		감각적이고 품격있는 선물을 원하시는 분들 또한 C#은 최고의 선택입니다.<br>
+		<br>
+		C# 고유의 디자인으로 만들어진 케익과 차별화된 맛 그리고 프리미엄 꽃배달을 지금 체험해보세요.<br>
+	</font>
 
 </left>
 
 <br></br>
 <br>
 <br>
-<center>
-<img src="/CShop/resources/img/about/about7.png">
-</center>
+	<center>
+		<img src="/CShop/resources/img/about/about7.png">
+	</center>
 <br></br>
 <br></br>
 <br></br>
@@ -345,7 +346,7 @@ C# 고유의 디자인으로 만들어진 케익과 차별화된 맛 그리고 �
 			<!-- 이메일 보내기 -->
 		
 		
-			<form action="/CShop/mailProc.do" method="POST">
+			<form action="mailProc.do" method="POST">
 			<div class="emailBox">
 				<div class="emailRow">
 					<input type="text" name="name" placeholder="이름"/>
@@ -382,15 +383,13 @@ C# 고유의 디자인으로 만들어진 케익과 차별화된 맛 그리고 �
 		</div>
 
 		
-			<!-- 월별 달력을 조립중입니다.
- 소스참고는   입니다 
- 문제시 자체 삭제하겠습니다.-->
+			<!-- 월별 달력소스 입니다.-->
  	<center><h2> C# 7월 대박 할인 이벤트</h2></center>
  	
- 	<div = class="pane">
- <div id="header">
+ 		<div = class="pane">
+ 	<div id="header">
 	
-	</div>
+		</div>
 
 	<div id="container">
 		<div id="date-cur"> </div>
@@ -456,7 +455,7 @@ C# 고유의 디자인으로 만들어진 케익과 차별화된 맛 그리고 �
         <td></td>
 	</div>
 	</div>
-</h2>
+	</h2>
 
 		
 	<center><h2>모바일 상담(클릭)</h2></center>
@@ -474,8 +473,6 @@ C# 고유의 디자인으로 만들어진 케익과 차별화된 맛 그리고 �
 		</p> 
 			
 	</div>
-
-
 
 
 </div>
