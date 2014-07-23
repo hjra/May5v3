@@ -3,7 +3,7 @@
 <%@ page session="true"%>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link href="/CShop/resources/css/payment.css" rel="stylesheet">
+<link href="/CShop/resources/css/paymentt.css" rel="stylesheet">
 <%@ page import="java.util.*, java.text.*"  %>
 <%
  java.text.SimpleDateFormat formatter = new java.text.SimpleDateFormat("yyyy년 MM월 dd일 HH시 mm분 ss초");
@@ -187,7 +187,7 @@ optionPrice.optionPrice }" name="totalPrice">
 		<input type="hidden" value="${orders.dlvinfoyn }" name="dlvinfoyn">
 		<input type="hidden" value="${orders.dlvwarn }" name="dlvwarn">
 		<input type="hidden" value="${orders.payCode }" name="payCode">
-		
+		<input type="hidden" value="${orders.url }" name="url">
 	<p>
 		<input type="reset" value="재입력"  class="ased" style="font-weight:bold" />
 		<input type="button" onclick="javascript:history.back(-1)" value="이전" class="aseda" style="font-weight:bold"/>

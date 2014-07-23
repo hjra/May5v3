@@ -73,8 +73,8 @@
 <c:when test="${orders.optionCode == 0 }">
 </c:when>
 <c:otherwise>
-<div>
-	<span class=""><label for="">카드문구</label></span>
+<div class="odName">
+	<span class="name"><label for="">카드문구</label></span>
 	<span><input type="text" value="${orders.cardMessage }"></span>
 </div>
 </c:otherwise>
@@ -103,9 +103,11 @@
 </div>
 <c:choose>
 <c:when test="${orders.optionCode == 3 }">
-<div>
-	<span class=""><label for="">QR코드</label></span>
-	<span>
+
+<div class="odCpa"> 
+	<div class="adsdf">
+	<span class="nameaaa"><label for="">QR코드</label></span>
+	<span class="naqaa">
 		<%  
    		 if (nCheck == 1) {  
        		 String qrcode = request.getContextPath() + "/resources/img/" + savedFileName + ".png";  
@@ -116,12 +118,16 @@
    		 }  
 		%>  
 	</span>
-</div>
+	</div>
+</div> 
+
 </c:when>
 <c:when test="${orders.optionCode == 5 }">
-<div>
-	<span class=""><label for="">QR코드</label></span>
-	<span>
+
+<div class="odCpa">
+	<div class="adsdf">
+	<span class="nameaaa"><label for="">QR코드</label></span>
+	<span class="naqaa">
 		<%  
    		 if (nCheck == 1) {  
        		 String qrcode = request.getContextPath() + "/resources/img/" + savedFileName + ".png";  
@@ -132,7 +138,9 @@
    		 }  
 		%>  
 	</span>
-</div>	
+	</div>
+</div>
+
 </c:when>
 <c:otherwise>
 </c:otherwise>
