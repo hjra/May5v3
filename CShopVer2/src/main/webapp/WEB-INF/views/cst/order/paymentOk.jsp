@@ -105,7 +105,7 @@
 <c:when test="${orders.optionCode == 3 }">
 
 <div class="odCpa"> 
-	<div class="adsdf">
+
 	<span class="nameaaa"><label for="">QR코드</label></span>
 	<span class="naqaa">
 		<%  
@@ -119,13 +119,13 @@
 		%>  
 	</span>
 	</div>
-</div> 
+
 
 </c:when>
 <c:when test="${orders.optionCode == 5 }">
 
 <div class="odCpa">
-	<div class="adsdf">
+
 	<span class="nameaaa"><label for="">QR코드</label></span>
 	<span class="naqaa">
 		<%  
@@ -139,7 +139,7 @@
 		%>  
 	</span>
 	</div>
-</div>
+
 
 </c:when>
 <c:otherwise>
