@@ -41,6 +41,7 @@
 				<a href="menuList.do">MENU</a>
 			</div>
 		</div>
+		
 		<div class="order">
 			<div class="ordera">
 				<a href="advanceOrder.do">ORDER</a>
@@ -48,13 +49,14 @@
 			<div class="orderb">
 				<a href="orderList.do">ORDERSEARCH</a>
 			</div>
-
-
 		</div>
+		
 		<div class="about">
-			<div class="abouta">ABOUT</div>
-
+			<div class="abouta">
+				<a href="about.do">ABOUT</a>
+			</div>
 		</div>
+		
 	</nav>
 </header>
 
