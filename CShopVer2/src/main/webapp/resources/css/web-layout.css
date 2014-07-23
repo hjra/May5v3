@@ -6,16 +6,16 @@
 
 body, html { margin: 0; padding: 0; }
 
-#master-header { z-index: 2; display: block; position: fixed; width: 100%; height: 70px; top: 0px; left:0px; text-align: center; background: #fefffa; border-bottom: 3px solid #fceee8; margin-bottom: 5px; }
+#master-header { z-index: 2; display: block; position: fixed; width: 100%; height: 70px; top: 0px; left:0px; text-align: center; background: #fefffa; border-bottom: 3px solid #fefffa; margin-bottom: 5px; }
 #master-header #mobile-logo, #master-header #mobile-menu-toggle { display: none; position: absolute; }
 #master-header menu#gnb { display: inline-block; zoom: 1; *display: inline; margin: 20px auto 0 auto; }
 #master-header menu#gnb li { list-style: none; cursor: pointer; }
 #master-header menu#gnb > li { color: #775542; position: relative; display: inline-block; zoom: 1; *display: inline; width: 70px; font-size: 14px; }
 #master-header menu#gnb > li div.submenu { position: absolute; display: none; left: -40px; width: 150px; }
-#master-header menu#gnb > li div.submenu menu { width: 100%; padding: 10px; background: #ffdecc; border-right: 2px solid #e6dac3; border-bottom: 2px solid #e6dac3; }
+#master-header menu#gnb > li div.submenu menu { width: 100%; padding: 10px; background: #FAF8EB; border-right: 2px solid #e6dac3; border-bottom: 2px solid #e6dac3; }
 #master-header menu#gnb > li div.submenu menu li { text-align: left; font-size: 12px; padding-left: 10px; color: #775542; height: 30px; line-height: 30px; border-bottom: 1px solid #fdf6f0; }
 #master-header menu#gnb > li div.submenu menu li:first-child { border-top: 1px solid #fdf6f0; }
-#master-header menu#gnb > li div.submenu menu li:hover { background: #f7bcad; }
+#master-header menu#gnb > li div.submenu menu li:hover { background: #E5D69B; }
 #master-header menu#gnb > li:hover div.submenu { display: block; }
 #master-header menu#gnb > li#desktop-logo { font-size: 25px; }
 
@@ -24,13 +24,13 @@ body, html { margin: 0; padding: 0; }
   #master-header #mobile-menu-toggle { display: block; right: 15px; top: 15px; cursor: pointer; }
   #master-header #mobile-menu-toggle:hover { opacity: .8; }
   #master-header #mobile-logo { position: absolute; top: 20px; right: 20px; }
-  #master-header menu#gnb { transition: all 1s; height: 0px; padding: 0; overflow: hidden; position: absolute; top: 50px; left: 0px; z-index: -1; width: 100%; background: #ffdecc; border-bottom: 4px solid #d6cab3; }
+  #master-header menu#gnb { transition: all 1s; height: 0px; padding: 0; overflow: hidden; position: absolute; top: 50px; left: 0px; z-index: -1; width: 100%; background: #FAF8EB; border-bottom: 4px solid #d6cab3; }
   #master-header menu#gnb > li { display: block; border-bottom: 2px solid #fcf6f0; width: 100%; text-align: left; min-height: 30px; line-height: 30px; font-size: 18px; }
   #master-header menu#gnb > li div.submenu { display: block; position: relative; left: 0; width: 100%; }
   #master-header menu#gnb > li div.submenu menu { margin: 0; padding: 0; border: none; }
-  #master-header menu#gnb > li div.submenu menu li { font-size: 18px; background: #f7b8a8; height: 30px; line-height: 30px; border: none; padding-left: 10px; }
+  #master-header menu#gnb > li div.submenu menu li { font-size: 18px; background: #E5D69B; height: 30px; line-height: 30px; border: none; padding-left: 10px; }
   #master-header menu#gnb > li div.submenu menu li:first-child { border: none; }
-  #master-header menu#gnb > li div.submenu menu li:hover { background: #f7b8a8; }
+  #master-header menu#gnb > li div.submenu menu li:hover { background: #ECD472; }
   #master-header menu#gnb > li#desktop-logo { display: none; }
   #master-header menu#gnb.active { height: 660px; padding: 10px 20px 10px 20px; } }
 
