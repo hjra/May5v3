@@ -7,7 +7,7 @@
 
 <div class="menulist-wrapper">
 	<c:forEach var="list" items="${collection}" varStatus="status">
-	<div class="menulist">
+	<div class="menulist cst">
 		<h3 class="menulist-title">
 			<c:choose>
 				<c:when test="${status.index == 0}">

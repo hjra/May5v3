@@ -20,9 +20,9 @@ $(document)
 
 
 <h1>상품재고</h1>
-
+<%-- 
 orderCount::${orderCount}<br>
-getOrderListSameItemId::${getOrderListSameItemId}
+getOrderListSameItemId::${getOrderListSameItemId} --%>
 
 <form method="get">
 	<div class="row-fluid text-right">
