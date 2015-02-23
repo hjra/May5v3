@@ -1,79 +1,25 @@
-.useroption {margin: 0 auto; text-align: center; min-height: 100%; height: 900px;  background-color: #F9F6E7}
-.useroptiona {display: inline-block; padding-top: 200px; padding-left: 10px; padding-right: 10px; }  
-.useroptionb {padding-left: 30px; padding-right: 30px; background: rgba(255,255,255,0.8);  border-radius: 12px; 
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px; height: 500px; min-width: 350px; }
+@media only screen and (min-width : 800px) {
+	/* 데스크탑 브라우저 */
+nav.map {text-align: right; color: #111;margin-right: 10px;}
+nav.map a {color: #111;}
+div.joinList {border: 1px solid #999;width: 480px;margin: auto;}
+div.joinList div:first-child {border-bottom: 1px solid #999;padding: 15px;position: relative;}
+div.joinList div {padding: 7px 10px;position: relative;}
+div.joinList div ul {list-style: none;border: 1px solid #999;height: 70px;overflow-x: hidden;padding: 5px;}
+div.joinList div label {width:430px;}
+div.joinList div:first-child label input {top:50%;}
+div.joinList div label input {height: 22px;margin-top: -11px;position: absolute;right: 10px;top: 16px;width: 22px;}
+img.logo {display: block;margin: auto;}
+div.btn_area {text-align: center; width: 480px;margin: auto;}
+div.btn_area button {box-sizing: border-box;width: 50%;float: left;height: 40px;font-weight: bold;margin-top: 10px;border: 1px solid #999;}
 
+button#btn_agree {background-color: #999;color:#fff;}
+button#btn_cancel {background-color: #fff;color: #999;}
 
-.optiona { font-size: 20px; font-weight: bold; color: #B08A50; padding-top: 35px; } 
-.abn {border-bottom: 1px solid #B08A50; width: 50%;  display: inline-block; margin-bottom: 20px; min-width: 190px; max-width: 200px}
-.aba {text-align: left; margin-top: 50px; font-weight: bold; color: #222222}
-.abs {text-align: left; border-bottom: 1px solid #D4D5D4; color: #222222}
-.abc {font-size: 15px;  font-weight: bold; padding-bottom: 10px; padding-top: 20px; color: #222222 } 
+footer {padding-top: 100px;}
 
+}
 
- #dn { height: 190px;} 
-  
-  
-
-
- 
- 
-.asdfd {padding-top: 15px; }   
-.dfdfg {width: 100%; min-width: 333px;}
-.ased {background: #B08A50; border: 1px solid #B08A50; width: 150px; height: 40px; color: #FFFFFF;  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;}  
-.ased:hover {background: #B8935B; border: 1px solid #B08A50; width: 150px; height: 40px; color: #FFFFFF;} 
-.aseda {background: #B08A50; border: 1px solid #B08A50; width: 80px; height: 40px; color: #FFFFFF; border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;}
-.aseda:hover {background: #B8935B; border: 1px solid #B08A50; width: 80px; height: 40px; color: #FFFFFF;} 
-.dfds {border: 1px solid #D4D5D4}
-
- 
-@media only screen and (max-width: 768px){
-	
-
-	
-	 
-.useroption {margin: 0 auto; text-align: center; min-height: 100%; height: 700px;  background-color: #F9F6E7;  min-width: 330px;}
-.useroptiona {display: inline-block; padding-top: 90px; padding-left: 10px; padding-right: 10px; }  
-.useroptionb {padding-left: 15px; padding-right: 10px; background: rgba(255,255,255,0.8);  border-radius: 12px;  
-  -moz-border-radius: 12px;  
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px; height: 500px; min-width: 340px; }
-
-
-.optiona { font-size: 20px; font-weight: bold; color: #B08A50; padding-top: 35px; } 
-.abn {border-bottom: 1px solid #B08A50; width: 50%;  display: inline-block; margin-bottom: 20px; min-width: 190px; max-width: 200px}
-.aba {text-align: left; margin-top: 20px; font-weight: bold; color: #222222}
-.abs {text-align: left; border-bottom: 1px solid #D4D5D4; color: #222222; }
-.abc {font-size: 15px;  font-weight: bold; padding-bottom: 10px; padding-top: 20px; color: #222222 } 
-	
-	
-	 
-.adf {margin-top: 10px;}
-
-.ased {background: #B08A50; border: 1px solid #B08A50; width: 130px; height: 40px; color: #FFFFFF; margin-right:0%;  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;}  
-.ased:hover {background: #B8935B; border: 1px solid #B08A50; width: 130px; height: 40px; color: #FFFFFF;} 
-.asdd  {background: #B08A50; border: 1px solid #B08A50; width: 70px; height: 40px; color: #FFFFFF; border-radius: 3px; 
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;}
-.asdd:hover {background: #B8935B; border: 1px solid #B08A50; width: 70px; height: 40px; color: #FFFFFF;} 
-.aseda {background: #B08A50; border: 1px solid #B08A50; width: 80px; height: 40px; color: #FFFFFF; border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;}
-.aseda:hover {background: #B8935B; border: 1px solid #B08A50; width: 80px; height: 40px; color: #FFFFFF;} 
-	
-	
-	
-	}
+@media only screen and (min-width : 321px) {
+	/* 스마트폰 */
+}
