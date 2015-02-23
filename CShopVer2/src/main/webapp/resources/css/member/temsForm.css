@@ -9,12 +9,13 @@ div.joinList div ul {list-style: none;border: 1px solid #999;height: 70px;overfl
 div.joinList div label {width:430px;}
 div.joinList div:first-child label input {top:50%;}
 div.joinList div label input {height: 22px;margin-top: -11px;position: absolute;right: 10px;top: 16px;width: 22px;}
+div.checkbox_valid {display: none;text-align: center;color: #f00;font-weight: bold;margin-top: -15px;}
 img.logo {display: block;margin: auto;}
 div.btn_area {text-align: center; width: 480px;margin: auto;}
-div.btn_area button {box-sizing: border-box;width: 50%;float: left;height: 40px;font-weight: bold;margin-top: 10px;border: 1px solid #999;}
+div.btn_area input {box-sizing: border-box;width: 50%;float: left;height: 40px;font-weight: bold;margin-top: 10px;border: 1px solid #999;}
 
-button#btn_agree {background-color: #999;color:#fff;}
-button#btn_cancel {background-color: #fff;color: #999;}
+input.btn_agree {background-color: #999;color:#fff;}
+input.btn_cancel {background-color: #fff;color: #999;}
 
 footer {padding-top: 100px;}
 
