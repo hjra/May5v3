@@ -1,0 +1,47 @@
+@media only screen and (min-width : 800px) {
+	/* 데스크탑 브라우저 */
+nav.map {text-align: right; color: #111;margin-right: 10px;}
+nav.map a {color: #111;}
+img.logo {left: 50%;position: relative;margin-left: -237px;}
+
+div.termsList {border: 1px solid #999;width: 480px;margin: auto;}
+div.termsList div:first-child {border-bottom: 1px solid #999;padding: 15px;position: relative;}
+div.termsList div {padding: 7px 10px;position: relative;}
+div.termsList div ul {list-style: none;border: 1px solid #999;height: 70px;overflow-x: hidden;padding: 5px;}
+div.termsList div label {width:430px;}
+div.termsList div:first-child label input {top:50%;}
+div.termsList div label input {height: 22px;margin-top: -11px;position: absolute;right: 10px;top: 16px;width: 22px;}
+div.checkbox_valid {display: none;text-align: center;color: #f00;font-weight: bold;margin-top: -15px;}
+
+div.joinList {width: 480px; margin: auto;}
+div.joinList div.row_group {padding-bottom: 10px;}
+div.joinList div.row_group div:first-child {border-top: 1px solid #999;}
+div.joinList div.row_group div {border-left: 1px solid #999;border-right: 1px solid #999;border-bottom: 1px solid #999;}
+div.joinList div.row_group div input {width: 100%;height: 40px;padding:10px;border: none;}
+div.joinList div.row_group div#genderDiv input[type=radio] {position: absolute;left: 50%;z-index: 0;height: 30px;width: 30px;}
+div.joinList div.row_group div#genderDiv {width: 100%;border-bottom: 0;}
+div.joinList div.row_group div#genderDiv label {background-color:#fff;color: #999;width: 50%;display: block;float: left;height: 40px;padding: 10px;z-index: 1;position: relative;margin-bottom: 0;font-weight: normal;border-bottom: 1px solid #999;}
+div.joinList div.row_group div#genderDiv input#cstGender1 + label {border-right: 1px solid #999;}
+div.joinList div.row_group div#genderDiv input[type=radio]:checked + label {background-color: #999; color: #fff;}
+div.joinList div.row_group div button.btn_rows {float: right;position: relative;margin-top: -40px;height: 40px;width: 90px;background-color: #999;border: 1px solid #999;color: #fff;}
+
+div.joinList div.row_group div#zipCodeDiv {display: none;}
+div.joinList div.row_group div#scZipCheck {display: none;border-left: none;border-right: none;height: 40px;padding: 10px;}
+div.joinList div.row_group div#zipInfoDiv {display: none;padding: 10px;margin: 5px 0px;border: 1px solid #999;width: 100%; height: 100px; overflow: auto;}
+div.joinList div.row_group div#zipInfoDiv:not(:empty) + div {border-top: 1px solid #999;}
+div.joinList div.row_group div#zipInfoDiv:empty + div {border-top: none;}
+
+
+div.btn_area {text-align: center; width: 480px;margin: auto;}
+div.btn_area input {box-sizing: border-box;width: 50%;float: left;height: 40px;font-weight: bold;margin-top: 10px;border: 1px solid #999;}
+
+input.btn_agree, input.btn_join {background-color: #999;color:#fff;}
+input.btn_cancel, input.btn_reset {background-color: #fff;color: #999;}
+
+footer {padding-top: 100px;}
+
+}
+
+@media only screen and (min-width : 321px) {
+	/* 스마트폰 */
+}
