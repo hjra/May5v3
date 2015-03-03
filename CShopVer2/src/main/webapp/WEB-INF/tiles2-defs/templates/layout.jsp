@@ -12,11 +12,12 @@
 	<meta name="viewport" content="width=480" />
 	<!-- style -->
 	<link href="/CShop/resources/css/web-layout.css" rel="stylesheet">
+	<link href="http://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
 	
 	<!-- default js -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="/CShop/resources/js/web.js"></script>
-	
+
 	<!-- datepicker 부분 -->
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 	<script type="text/javascript" src="/CShop/resources/js/jquery.ui.datepicker-ko.js"></script>

@@ -40,15 +40,15 @@
 			</div>
 		</div>
 		<div class="row_group">
-			<div id="cPDiv">
+			<div id="cPDiv" class="btn_group">
 				<f:input path="cstCP" placeholder="MOBILE PHONE"  />
 				<button type="button" name="" id="" class="btn_rows">VERIFY</button>
 			</div>
-			<div id="codeDiv">
+			<div id="codeDiv" class="btn_group">
 				<input type="text" name="code" placeholder="CODE" class="row_text">
 				<button type="button" name="" id="" class="btn_rows">CONFIRM</button>
 			</div>
-			<div id="add1Div">
+			<div id="add1Div" class="btn_group">
 				<div id="zipCodeDiv"></div>
 				<%-- <form method="post" action="javascript:nothing()"> --%>
 				<input type="text" id="scZipText" placeholder="ADDRESS" value="" class="row_text"
@@ -72,4 +72,5 @@
 </div>
 <link href="resources/css/member/join.css" rel="stylesheet">
 <script src="resources/script/member/zipSearch.js"></script>
-<script type="text/javascript"></script>
+<script type="text/javascript">
+</script>

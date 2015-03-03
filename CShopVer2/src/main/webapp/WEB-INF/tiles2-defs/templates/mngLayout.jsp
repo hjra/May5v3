@@ -13,6 +13,7 @@
 	
 	<!-- style -->
 	<link href="/CShop/resources/css/admin-layout.css" rel="stylesheet">
+	<link href="http://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
 	
 	<!-- default js -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
