@@ -49,8 +49,8 @@
 				</menu>
 			</div>
 		</li>
-		<li onclick="location.href='/CShop/'" id="desktop-logo"><img src="/CShop/resources/img/main/CI1.png" width="60px" height="60px"></li>
-
+		<!-- <li onclick="location.href='/CShop/'" id="desktop-logo"><img src="/CShop/resources/img/main/CI1.png" width="60px" height="60px"></li> -->
+		<li onclick="location.href='/CShop/'" id="desktop-logo" class="pie"></li>
 		<li>
 			<a href="advanceOrder.do">ORDER</a>
 			<div class="submenu"> 
