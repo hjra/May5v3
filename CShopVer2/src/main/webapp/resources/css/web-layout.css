@@ -7,18 +7,19 @@
 
 body, html { margin: 0; padding: 0; }
 
-#master-header { z-index: 2; display: block; position: fixed; width: 100%; height: 70px; top: 0px; left:0px; text-align: center; background: #fefffa; border-bottom: 3px solid #fefffa; margin-bottom: 5px; }
+#master-header { z-index: 2; display: block; position: fixed; width: 100%; height: 55px; top: 0px; left:0px; text-align: center; background: #fefffa; border-bottom: 3px solid #fefffa; margin-bottom: 5px; }
 #master-header #mobile-logo, #master-header #mobile-menu-toggle { display: none; position: absolute; }
-#master-header menu#gnb { display: inline-block; zoom: 1; *display: inline; margin: 20px auto 0 auto; }
+#master-header menu#gnb { display: inline-block; zoom: 1; *display: inline; margin: 4px auto 0 auto; border: 1px solid #775542; padding: 10px 10px; text-align: center; box-sizing: border-box; width: 90%;}
 #master-header menu#gnb li { list-style: none; cursor: pointer; }
-#master-header menu#gnb > li { color: #775542; position: relative; display: inline-block; zoom: 1; *display: inline; width: 70px; font-size: 14px; }
-#master-header menu#gnb > li div.submenu { position: absolute; display: none; left: -40px; width: 150px; }
-#master-header menu#gnb > li div.submenu menu { width: 100%; padding: 10px; background: #FAF8EB; border-right: 2px solid #e6dac3; border-bottom: 2px solid #e6dac3; }
-#master-header menu#gnb > li div.submenu menu li { text-align: left; font-size: 12px; padding-left: 10px; color: #775542; height: 30px; line-height: 30px; border-bottom: 1px solid #ffffff; } 
-#master-header menu#gnb > li div.submenu menu li:first-child { border-top: 1px solid #ffffff; }
+#master-header menu#gnb > li { color: #775542; position: relative; display: inline-block; zoom: 1; *display: inline; width: 150px; font-size: 14px; font-weight: bold; margin: 0px 20px; }
+#master-header menu#gnb > li:HOVER { border-bottom: 1px solid; }
+#master-header menu#gnb > li div.submenu { display: none; }
+#master-header menu#gnb > li div.submenu menu { width: 100%; background: #FAF8EB; }
+#master-header menu#gnb > li div.submenu menu li { font-size: 12px; padding-left: 10px; color: #775542; height: 30px; line-height: 30px; } 
 #master-header menu#gnb > li div.submenu menu li:hover { background: #E5D69B; }
 #master-header menu#gnb > li:hover div.submenu { display: block; }
 #master-header menu#gnb > li#desktop-logo { font-size: 25px; }
+#master-header a#desktop-logo { font-size: 25px; }
 
 
 @media only screen and (max-width: 766px) { #master-header #mobile-logo { display: block; left: 15px; top: 15px; }
@@ -33,5 +34,6 @@ body, html { margin: 0; padding: 0; }
   #master-header menu#gnb > li div.submenu menu li:first-child { border: none; }
   #master-header menu#gnb > li div.submenu menu li:hover { background: #ECD472; }
   #master-header menu#gnb > li#desktop-logo { display: none; }
+  #master-header a#desktop-logo { display: none; }
   #master-header menu#gnb.active { height: 660px; padding: 10px 20px 10px 20px; } }
 

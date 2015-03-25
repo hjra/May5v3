@@ -35,12 +35,13 @@
 	
 </script>
 <header id="master-header">
-	<a id="mobile-logo" onclick="location.href='homeImage.do'"><img src="/CShop/resources/img/main/CI1.png" width="50px" height="50px"></a> <a
-		id="mobile-menu-toggle"> 
-		<img src="/CShop/resources/img/mobile-menu-toggle-button.png"
-		alt="메뉴펼치기"></a>
+	<a id="mobile-logo" onclick="location.href='homeImage.do'"><img src="/CShop/resources/img/main/CI1.png" width="50px" height="50px"></a>
+	<a href="/CShop/" id="desktop-logo" class="pie"></a>
+	<a id="mobile-menu-toggle"><img src="/CShop/resources/img/mobile-menu-toggle-button.png" alt="메뉴펼치기"></a>
 	<menu id="gnb">
-		<li onclick="location.href='homeImage.do'">HOME</li>
+		<li>
+			<a href="homeImage.do">HOME</a>
+		</li>
 		<li>
 			<a href="menuList.do">MENU</a>
 			<div class="submenu">
@@ -49,8 +50,6 @@
 				</menu>
 			</div>
 		</li>
-		<!-- <li onclick="location.href='/CShop/'" id="desktop-logo"><img src="/CShop/resources/img/main/CI1.png" width="60px" height="60px"></li> -->
-		<li onclick="location.href='/CShop/'" id="desktop-logo" class="pie"></li>
 		<li>
 			<a href="advanceOrder.do">ORDER</a>
 			<div class="submenu"> 
@@ -60,8 +59,11 @@
 				</menu>
 			</div>
 		</li>
-		<li onclick="location.href='about.do'">ABOUT</li>
-		<li style="font-size: 8px">Membership
+		<li>
+			<a href="about.do">ABOUT</a>
+		</li>
+		<li>
+			<a href="#">Membership</a>
 			<div class="submenu">
 				<!-- 임시방편 -->
 				<menu>
@@ -104,4 +106,7 @@
 						</c:when>
 					</c:choose>
 				</menu> 
+			</div>
+		</li>
+	</menu>
 </header>
